@@ -1,0 +1,15 @@
+{
+  "kind": "fiq.variables",
+  "exportedAt": "2026-02-17T17:27:44.187Z",
+  "environmentId": "a9111663-d043-42db-a018-59feea4e9861",
+  "environmentName": "ID05 - MVC MFA",
+  "variable": {
+    "id": "779a4174-6694-4970-a131-3d7ce0ce39bc",
+    "name": "ciam_verificationValidationAttempts",
+    "context": "flowInstance",
+    "dataType": "number",
+    "description": "",
+    "mutable": true,
+    "updatedAt": "2025-06-05T15:24:40.409Z"
+  }
+}
