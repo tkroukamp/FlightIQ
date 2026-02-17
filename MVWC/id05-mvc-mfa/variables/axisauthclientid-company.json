@@ -1,0 +1,16 @@
+{
+  "kind": "fiq.variables",
+  "exportedAt": "2026-02-17T17:25:44.722Z",
+  "environmentId": "a9111663-d043-42db-a018-59feea4e9861",
+  "environmentName": "ID05 - MVC MFA",
+  "variable": {
+    "id": "39b35eb9-1560-46f9-b705-f03981314977",
+    "name": "axisAuthClientId",
+    "context": "company",
+    "dataType": "string",
+    "description": "AxisAuth Client ID",
+    "mutable": false,
+    "updatedAt": "2025-09-17T18:46:14.543Z",
+    "value": "4upfj4nk12e8"
+  }
+}
