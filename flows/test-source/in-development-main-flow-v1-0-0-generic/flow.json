@@ -1,0 +1,319 @@
+{
+  "name": "IN DEVELOPMENT - [MAIN FLOW] - v1.0.0 - Generic",
+  "enabled": true,
+  "publishedVersion": 7,
+  "connectors": [
+    {
+      "id": "httpConnector"
+    },
+    {
+      "id": "nodeConnector"
+    }
+  ],
+  "settings": {
+    "csp": "worker-src 'self' blob:; script-src 'self' https://cdn.jsdelivr.net https://code.jquery.com https://devsdk.singularkey.com http://cdnjs.cloudflare.com 'unsafe-inline' 'unsafe-eval';",
+    "intermediateLoadingScreenCSS": "",
+    "intermediateLoadingScreenHTML": "",
+    "customTimeoutErrorScreenMessage": "",
+    "customTimeoutErrorScreenHTML": "",
+    "customTimeoutErrorScreenCSS": "",
+    "logLevel": 4
+  },
+  "color": "#CACED3",
+  "graphData": {
+    "elements": {
+      "edges": [
+        {
+          "data": {
+            "id": "fq8wduaigg",
+            "source": "o8z7ab5685",
+            "target": "g7g8b6oqn"
+          },
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "group": "edges",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": true,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "9xphrkl4lu",
+            "source": "bxcposmjwa",
+            "target": "ea6roij5r3"
+          },
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "group": "edges",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": true,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "79gnvdt8yh",
+            "source": "g7g8b6oqn",
+            "target": "cplattnbd3"
+          },
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "group": "edges",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": true,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "jsr76xgp8h",
+            "source": "ea6roij5r3",
+            "target": "bjriv51rkg"
+          },
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "group": "edges",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": true,
+          "classes": ""
+        }
+      ],
+      "nodes": [
+        {
+          "data": {
+            "id": "cplattnbd3",
+            "nodeType": "CONNECTION",
+            "connectionId": "867ed4363b2bc21c860085ad2baa817d",
+            "connectorId": "httpConnector",
+            "name": "Http",
+            "label": "Http",
+            "status": "configured",
+            "capabilityName": "createUnwrappedResponse",
+            "type": "action",
+            "properties": {
+              "jsonString": {
+                "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      }\n    ]\n  }\n]"
+              },
+              "httpStatusCode": {
+                "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"200\"\n      }\n    ]\n  }\n]"
+              },
+              "nodeTitle": {
+                "value": "Send Success JSON"
+              },
+              "backgroundColor": {
+                "value": "#7ed321ff"
+              }
+            }
+          },
+          "position": {
+            "x": 510,
+            "y": 330
+          },
+          "group": "nodes",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": false,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "o8z7ab5685",
+            "nodeType": "CONNECTION",
+            "connectionId": "3566e86a35c26e575396dcfb89a3dcc0",
+            "connectorId": "nodeConnector",
+            "name": "Teleport",
+            "label": "Teleport",
+            "status": "configured",
+            "capabilityName": "startNode",
+            "type": "trigger",
+            "properties": {
+              "nodeTitle": {
+                "value": "Success"
+              }
+            }
+          },
+          "position": {
+            "x": 240,
+            "y": 330
+          },
+          "group": "nodes",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": false,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "g7g8b6oqn",
+            "nodeType": "EVAL"
+          },
+          "position": {
+            "x": 360,
+            "y": 330
+          },
+          "group": "nodes",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": false,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "ea6roij5r3",
+            "nodeType": "EVAL"
+          },
+          "position": {
+            "x": 360,
+            "y": 540
+          },
+          "group": "nodes",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": false,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "bxcposmjwa",
+            "nodeType": "CONNECTION",
+            "connectionId": "3566e86a35c26e575396dcfb89a3dcc0",
+            "connectorId": "nodeConnector",
+            "name": "Teleport",
+            "label": "Teleport",
+            "status": "configured",
+            "capabilityName": "startNode",
+            "type": "trigger",
+            "properties": {
+              "nodeTitle": {
+                "value": "Error"
+              },
+              "inputSchema": {
+                "value": "{\n  \"type\": \"object\",\n  \"properties\": {\n    \"error_code\": {\n      \"type\": \"string\",\n      \"displayName\": \"HTTP Error Code\",\n      \"preferredControlType\": \"textField\",\n      \"enableParameters\": true,\n      \"propertyName\": \"error_code\"\n    },\n    \"error_message\": {\n      \"type\": \"string\",\n      \"displayName\": \"Error Message\",\n      \"preferredControlType\": \"textField\",\n      \"enableParameters\": true,\n      \"propertyName\": \"error_message\"\n    }\n  }\n}\n"
+              }
+            }
+          },
+          "position": {
+            "x": 240,
+            "y": 540
+          },
+          "group": "nodes",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": false,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "bjriv51rkg",
+            "nodeType": "CONNECTION",
+            "connectionId": "867ed4363b2bc21c860085ad2baa817d",
+            "connectorId": "httpConnector",
+            "name": "Http",
+            "label": "HTTP",
+            "status": "configured",
+            "capabilityName": "createUnwrappedResponse",
+            "type": "action",
+            "properties": {
+              "nodeTitle": {
+                "value": "Send Error JSON"
+              },
+              "backgroundColor": {
+                "value": "#d0021bff"
+              },
+              "jsonString": {
+                "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"{\\r\\n  \\\"error\\\": {\\r\\n    \\\"code\\\": \\\"\"\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"type\": \"link\",\n        \"src\": \"teleport.svg\",\n        \"url\": \"error_code\",\n        \"data\": \"{{local.bxcposmjwa.payload.output.error_code}}\",\n        \"tooltip\": \"{{local.bxcposmjwa.payload.output.error_code}}\",\n        \"children\": [\n          {\n            \"text\": \"error_code\"\n          }\n        ]\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\\\",\\r\\n    \\\"message\\\": \\\"\"\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"type\": \"link\",\n        \"src\": \"teleport.svg\",\n        \"url\": \"error_message\",\n        \"data\": \"{{local.bxcposmjwa.payload.output.error_message}}\",\n        \"tooltip\": \"{{local.bxcposmjwa.payload.output.error_message}}\",\n        \"children\": [\n          {\n            \"text\": \"error_message\"\n          }\n        ]\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\\\"\\r\\n  }\\r\\n}\"\n      }\n    ]\n  }\n]"
+              },
+              "httpStatusCode": {
+                "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"type\": \"link\",\n        \"src\": \"teleport.svg\",\n        \"url\": \"error_code\",\n        \"data\": \"{{local.bxcposmjwa.payload.output.error_code}}\",\n        \"tooltip\": \"{{local.bxcposmjwa.payload.output.error_code}}\",\n        \"children\": [\n          {\n            \"text\": \"error_code\"\n          }\n        ]\n      },\n      {\n        \"text\": \"\"\n      }\n    ]\n  }\n]"
+              }
+            }
+          },
+          "position": {
+            "x": 510,
+            "y": 540
+          },
+          "group": "nodes",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": false,
+          "classes": ""
+        }
+      ]
+    },
+    "data": {},
+    "zoomingEnabled": true,
+    "userZoomingEnabled": true,
+    "zoom": 1,
+    "minZoom": 1e-50,
+    "maxZoom": 1e+50,
+    "panningEnabled": true,
+    "userPanningEnabled": true,
+    "pan": {
+      "x": 0,
+      "y": 0
+    },
+    "boxSelectionEnabled": true,
+    "renderer": {
+      "name": "null"
+    }
+  },
+  "inputSchema": [
+    {
+      "propertyName": "attribute",
+      "description": "",
+      "preferredDataType": "string",
+      "preferredControlType": "textField",
+      "isExpanded": true,
+      "required": true
+    },
+    {
+      "propertyName": "value",
+      "description": "",
+      "preferredDataType": "string",
+      "preferredControlType": "textField",
+      "isExpanded": true,
+      "required": true
+    }
+  ],
+  "deployedAt": "2026-01-12T14:30:51.645Z"
+}
