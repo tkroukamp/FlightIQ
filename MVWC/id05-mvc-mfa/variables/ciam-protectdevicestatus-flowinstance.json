@@ -1,0 +1,15 @@
+{
+  "kind": "fiq.variables",
+  "exportedAt": "2026-02-17T17:27:44.187Z",
+  "environmentId": "a9111663-d043-42db-a018-59feea4e9861",
+  "environmentName": "ID05 - MVC MFA",
+  "variable": {
+    "id": "104fc2e0-1e70-4a14-b344-13f76bc9fe22",
+    "name": "ciam_protectDeviceStatus",
+    "context": "flowInstance",
+    "dataType": "string",
+    "description": "Used by CIAM Passwordless and PingOne protect flow",
+    "mutable": true,
+    "updatedAt": "2025-06-05T15:24:42.838Z"
+  }
+}
