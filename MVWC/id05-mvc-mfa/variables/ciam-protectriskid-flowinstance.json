@@ -1,0 +1,15 @@
+{
+  "kind": "fiq.variables",
+  "exportedAt": "2026-02-17T17:27:44.187Z",
+  "environmentId": "a9111663-d043-42db-a018-59feea4e9861",
+  "environmentName": "ID05 - MVC MFA",
+  "variable": {
+    "id": "721730e6-ab59-4bfb-a2f2-c991f214b6c6",
+    "name": "ciam_protectRiskID",
+    "context": "flowInstance",
+    "dataType": "string",
+    "description": "This variable is used by CIAM Passwordless with pingone protect flows.",
+    "mutable": true,
+    "updatedAt": "2025-06-05T15:24:42.839Z"
+  }
+}
