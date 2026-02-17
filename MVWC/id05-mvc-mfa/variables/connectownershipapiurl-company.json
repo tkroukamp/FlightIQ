@@ -1,0 +1,16 @@
+{
+  "kind": "fiq.variables",
+  "exportedAt": "2026-02-17T17:27:44.187Z",
+  "environmentId": "a9111663-d043-42db-a018-59feea4e9861",
+  "environmentName": "ID05 - MVC MFA",
+  "variable": {
+    "id": "fff236b4-4951-47fe-b29f-30a74532d7ff",
+    "name": "connectOwnershipApiUrl",
+    "context": "company",
+    "dataType": "string",
+    "description": "Connect Ownership API Call",
+    "mutable": false,
+    "updatedAt": "2025-10-02T18:16:03.037Z",
+    "value": "https://id05-webauth-vo-mvwc.axisapps.io/api/exp/webauth/v1/user/me/ownership"
+  }
+}
