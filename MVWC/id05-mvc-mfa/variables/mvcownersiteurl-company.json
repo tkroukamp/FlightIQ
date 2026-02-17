@@ -1,0 +1,16 @@
+{
+  "kind": "fiq.variables",
+  "exportedAt": "2026-02-17T17:27:44.187Z",
+  "environmentId": "a9111663-d043-42db-a018-59feea4e9861",
+  "environmentName": "ID05 - MVC MFA",
+  "variable": {
+    "id": "b4e8ecd3-e66c-4b9b-8e3d-d88950487907",
+    "name": "mvcOwnerSiteUrl",
+    "context": "company",
+    "dataType": "string",
+    "description": "Marriott vacation club /NATO site URl",
+    "mutable": true,
+    "updatedAt": "2025-11-27T18:40:32.923Z",
+    "value": "https://id05.owners.marriottvacationclub.com/timeshare/mvco/owner/login"
+  }
+}
