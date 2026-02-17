@@ -1,0 +1,15 @@
+{
+  "kind": "fiq.variables",
+  "exportedAt": "2026-02-17T21:25:46.945Z",
+  "environmentId": "102bfeb8-b897-446d-bb21-39eb39ace38d",
+  "environmentName": "Test Source",
+  "variable": {
+    "id": "ae4284f2-e256-4994-bb08-b5677c87ab6a",
+    "name": "ciam_verificationValidationAttempts",
+    "context": "flowInstance",
+    "dataType": "string",
+    "description": "",
+    "mutable": true,
+    "updatedAt": "2026-02-17T18:04:31.364Z"
+  }
+}
