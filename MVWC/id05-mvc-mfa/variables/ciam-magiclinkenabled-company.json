@@ -1,0 +1,16 @@
+{
+  "kind": "fiq.variables",
+  "exportedAt": "2026-02-17T17:27:44.187Z",
+  "environmentId": "a9111663-d043-42db-a018-59feea4e9861",
+  "environmentName": "ID05 - MVC MFA",
+  "variable": {
+    "id": "0b44d9ea-c594-4bb7-ab54-8ac01fa415f3",
+    "name": "ciam_magicLinkEnabled",
+    "context": "company",
+    "dataType": "boolean",
+    "description": "",
+    "mutable": true,
+    "updatedAt": "2024-12-03T11:41:46.961Z",
+    "value": "false"
+  }
+}
