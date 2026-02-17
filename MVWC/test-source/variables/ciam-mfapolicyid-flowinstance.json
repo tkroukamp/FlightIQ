@@ -1,0 +1,15 @@
+{
+  "kind": "fiq.variables",
+  "exportedAt": "2026-02-17T21:25:46.945Z",
+  "environmentId": "102bfeb8-b897-446d-bb21-39eb39ace38d",
+  "environmentName": "Test Source",
+  "variable": {
+    "id": "f84b56d5-5e9d-4973-94df-e2ae0c8b91f5",
+    "name": "ciam_mfaPolicyID",
+    "context": "flowInstance",
+    "dataType": "string",
+    "description": "",
+    "mutable": true,
+    "updatedAt": "2026-02-17T18:04:30.286Z"
+  }
+}
