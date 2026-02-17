@@ -1,0 +1,15 @@
+{
+  "kind": "fiq.variables",
+  "exportedAt": "2026-02-17T21:25:46.944Z",
+  "environmentId": "102bfeb8-b897-446d-bb21-39eb39ace38d",
+  "environmentName": "Test Source",
+  "variable": {
+    "id": "c86fd1e3-b246-4875-81a9-b306a43a96b0",
+    "name": "ciam_accountRecoveryEnabled",
+    "context": "company",
+    "dataType": "string",
+    "description": "",
+    "mutable": true,
+    "updatedAt": "2026-02-17T18:04:18.781Z"
+  }
+}
