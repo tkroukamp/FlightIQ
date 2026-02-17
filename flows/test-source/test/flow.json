@@ -1,0 +1,94 @@
+{
+  "name": "Test",
+  "enabled": true,
+  "publishedVersion": 11,
+  "connectors": [
+    {
+      "id": "httpConnector"
+    }
+  ],
+  "settings": {
+    "csp": "worker-src 'self' blob:; script-src 'self' https://cdn.jsdelivr.net https://code.jquery.com https://devsdk.singularkey.com http://cdnjs.cloudflare.com 'unsafe-inline' 'unsafe-eval';",
+    "intermediateLoadingScreenCSS": "",
+    "intermediateLoadingScreenHTML": "",
+    "customTimeoutErrorScreenMessage": "",
+    "customTimeoutErrorScreenHTML": "",
+    "customTimeoutErrorScreenCSS": "",
+    "logLevel": 4,
+    "flowHttpTimeoutInSeconds": 15,
+    "flowTimeoutInSeconds": 299
+  },
+  "color": "#AFD5FF",
+  "graphData": {
+    "elements": {
+      "nodes": [
+        {
+          "data": {
+            "id": "frl7z1ts2r",
+            "nodeType": "CONNECTION",
+            "connectionId": "867ed4363b2bc21c860085ad2baa817d",
+            "connectorId": "httpConnector",
+            "name": "Http",
+            "label": "Http",
+            "status": "configured",
+            "capabilityName": "customHtmlMessage",
+            "type": "trigger",
+            "properties": {
+              "messageTitle": {
+                "cssValue": "\"Hello World.\""
+              }
+            }
+          },
+          "position": {
+            "x": 277,
+            "y": 236
+          },
+          "group": "nodes",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": false,
+          "classes": ""
+        }
+      ]
+    },
+    "data": {},
+    "zoomingEnabled": true,
+    "userZoomingEnabled": true,
+    "zoom": 1,
+    "minZoom": 1e-50,
+    "maxZoom": 1e+50,
+    "panningEnabled": true,
+    "userPanningEnabled": true,
+    "pan": {
+      "x": 0,
+      "y": 0
+    },
+    "boxSelectionEnabled": true,
+    "renderer": {
+      "name": "null"
+    }
+  },
+  "inputSchema": [
+    {
+      "propertyName": "Test",
+      "preferredDataType": "string",
+      "required": true,
+      "description": "Test Value"
+    }
+  ],
+  "outputSchema": {
+    "output": {
+      "type": "object",
+      "testOutputSchemaValue": true,
+      "properties": {
+        "var": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "deployedAt": "2026-02-06T21:51:11.959Z"
+}
