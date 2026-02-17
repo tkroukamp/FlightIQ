@@ -4,12 +4,12 @@
   "environmentId": "a9111663-d043-42db-a018-59feea4e9861",
   "environmentName": "ID05 - MVC MFA",
   "variable": {
-    "id": "e20a174d-a48d-4e8b-96dd-75fd00550af7",
-    "name": "ORIGIN",
+    "id": "f0a1420e-6c7e-4daf-b197-4a5c3b0b9d63",
+    "name": "origin",
     "context": "flowInstance",
     "dataType": "string",
-    "description": "",
+    "description": "FIDO2 origin",
     "mutable": true,
-    "updatedAt": "2025-05-28T12:36:56.158Z"
+    "updatedAt": "2025-05-28T12:36:56.155Z"
   }
 }
