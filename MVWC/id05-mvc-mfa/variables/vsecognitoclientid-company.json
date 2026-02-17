@@ -1,0 +1,16 @@
+{
+  "kind": "fiq.variables",
+  "exportedAt": "2026-02-17T17:27:44.188Z",
+  "environmentId": "a9111663-d043-42db-a018-59feea4e9861",
+  "environmentName": "ID05 - MVC MFA",
+  "variable": {
+    "id": "ea8ccd8c-0143-4d38-a51c-fee73610c965",
+    "name": "VSECognitoClientID",
+    "context": "company",
+    "dataType": "string",
+    "description": "",
+    "mutable": false,
+    "updatedAt": "2025-07-10T11:18:05.524Z",
+    "value": "1ch269k4j3ehaot72q0r8qlnbc"
+  }
+}
