@@ -1,0 +1,16 @@
+{
+  "kind": "fiq.variables",
+  "exportedAt": "2026-02-17T17:27:44.187Z",
+  "environmentId": "a9111663-d043-42db-a018-59feea4e9861",
+  "environmentName": "ID05 - MVC MFA",
+  "variable": {
+    "id": "ce31f532-1c6d-4e5d-ae3c-5bc9c048f8af",
+    "name": "ciam_companyName",
+    "context": "company",
+    "dataType": "string",
+    "description": "",
+    "mutable": false,
+    "updatedAt": "2025-06-05T15:24:41.840Z",
+    "value": "Ping Identity"
+  }
+}
