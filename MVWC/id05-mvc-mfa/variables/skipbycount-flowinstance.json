@@ -1,0 +1,15 @@
+{
+  "kind": "fiq.variables",
+  "exportedAt": "2026-02-17T17:27:44.188Z",
+  "environmentId": "a9111663-d043-42db-a018-59feea4e9861",
+  "environmentName": "ID05 - MVC MFA",
+  "variable": {
+    "id": "ebde24ec-0a1a-497f-bc74-e036f47e673b",
+    "name": "skipByCount",
+    "context": "flowInstance",
+    "dataType": "number",
+    "description": "",
+    "mutable": true,
+    "updatedAt": "2025-08-19T22:13:54.851Z"
+  }
+}
