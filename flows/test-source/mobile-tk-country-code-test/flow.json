@@ -1,0 +1,992 @@
+{
+  "name": "Mobile - TK Country Code Test",
+  "enabled": true,
+  "publishedVersion": 14,
+  "connectors": [
+    {
+      "id": "functionsConnector"
+    },
+    {
+      "id": "httpConnector"
+    },
+    {
+      "id": "pingOneSSOConnector"
+    },
+    {
+      "id": "variablesConnector"
+    },
+    {
+      "id": "pingOneFormsConnector"
+    }
+  ],
+  "settings": {
+    "csp": "worker-src 'self' blob:; script-src 'self' https://cdn.jsdelivr.net https://code.jquery.com https://devsdk.singularkey.com http://cdnjs.cloudflare.com 'unsafe-inline' 'unsafe-eval';",
+    "intermediateLoadingScreenCSS": "",
+    "intermediateLoadingScreenHTML": "",
+    "customTimeoutErrorScreenMessage": "",
+    "customTimeoutErrorScreenHTML": "",
+    "customTimeoutErrorScreenCSS": "",
+    "logLevel": 4,
+    "pingOneFlow": true
+  },
+  "color": "#E3F0FF",
+  "graphData": {
+    "elements": {
+      "nodes": [
+        {
+          "data": {
+            "id": "vsyonlyg5d",
+            "nodeType": "CONNECTION",
+            "connectionId": "de650ca45593b82c49064ead10b9fe17",
+            "connectorId": "functionsConnector",
+            "name": "Functions",
+            "label": "Functions",
+            "status": "configured",
+            "capabilityName": "customFunction",
+            "type": "trigger",
+            "properties": {
+              "variableInputList": {
+                "value": [
+                  {
+                    "name": "phone",
+                    "preferredDataType": "string",
+                    "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"type\": \"link\",\n        \"src\": \"pingIdentity.svg\",\n        \"url\": \"primaryPhone\",\n        \"data\": \"{{local.3v5l097nq0.payload.output.matchedUser.primaryPhone}}\",\n        \"tooltip\": \"{{local.3v5l097nq0.payload.output.matchedUser.primaryPhone}}\",\n        \"children\": [\n          {\n            \"text\": \"primaryPhone\"\n          }\n        ]\n      },\n      {\n        \"text\": \"\"\n      }\n    ]\n  }\n]"
+                  },
+                  {
+                    "name": "countryCode",
+                    "preferredDataType": "string",
+                    "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"{{local.3v5l097nq0.payload.output.rawResponse.matchedUsers._embedded.users[0].phoneCountryCode}}\"\n      }\n    ]\n  }\n]"
+                  },
+                  {
+                    "name": "countryDataList",
+                    "preferredDataType": "object",
+                    "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"type\": \"link\",\n        \"src\": \"variable.svg\",\n        \"url\": \"countryDataList\",\n        \"data\": \"{{global.company.variables.countryDataList}}\",\n        \"tooltip\": \"{{global.company.variables.countryDataList}}\",\n        \"children\": [\n          {\n            \"text\": \"countryDataList\"\n          }\n        ]\n      },\n      {\n        \"text\": \"\"\n      }\n    ]\n  }\n]"
+                  }
+                ]
+              },
+              "code": {
+                "value": "module.exports = a = async ({params}) => {\n    console.log('params: ', params)\n\n    try {\n        const inputPhone = params.phone;\n        let inputCountryCode = params.countryCode;\n        const countryDataList = params.countryDataList;\n\n        if (!inputPhone) {\n            throw new Error('Missing required input: phone');\n        }\n\n        if (!countryDataList || !Array.isArray(countryDataList) || countryDataList.length === 0) {\n            throw new Error('countryDataList is required and must be a non-empty array.');\n        }\n\n        const rawPhone = inputPhone.replace(/\\D/g, '');\n        let updatesRequired = false;\n\n        // Sort country codes longest-first\n        const sortedCountryData = countryDataList.sort((a, b) => b.dialCode.length - a.dialCode.length);\n\n        let nationalNumber = '';\n        let countryCode = '';\n        let fullNumber = '';\n        let countryName = '';\n\n        //\n        // STEP 1: Infer country code from phone number\n        //\n        let inferredEntry = null;\n        for (const entry of sortedCountryData) {\n            if (rawPhone.startsWith(entry.dialCode)) {\n                inferredEntry = entry;\n                break;\n            }\n        }\n\n        if (!inferredEntry) {\n            throw new Error('Unable to determine country code from phone number');\n        }\n\n        const inferredCountryCode = `+${inferredEntry.dialCode}`;\n        const inferredNationalNumber = rawPhone.substring(inferredEntry.dialCode.length);\n        const inferredCountryName = inferredEntry.name;\n\n        //\n        // STEP 2: Validate or ignore provided country code\n        //\n        if (inputCountryCode && inputCountryCode.trim() !== '') {\n            const cleaned = inputCountryCode.replace(/[^\\d]/g, '');\n            const normalized = `+${cleaned}`;\n            if (normalized !== inferredCountryCode) {\n                // mismatch → trust phone number, ignore supplied country code\n                updatesRequired = true;\n                countryCode = inferredCountryCode;\n                nationalNumber = inferredNationalNumber;\n                countryName = inferredCountryName;\n            } else {\n                countryCode = normalized;\n                nationalNumber = rawPhone.substring(cleaned.length);\n                countryName = inferredCountryName;\n            }\n        } else {\n            // no country code supplied → infer from phone\n            countryCode = inferredCountryCode;\n            nationalNumber = inferredNationalNumber;\n            countryName = inferredCountryName;\n            updatesRequired = true;\n        }\n\n        // Special fallback for 10-digit US/Canada numbers\n        if (rawPhone.length === 10 && countryCode === '+1') {\n            nationalNumber = rawPhone;\n        }\n\n        fullNumber = `${countryCode}${nationalNumber}`;\n\n        const maskPhone = (num) => {\n            const digits = num.replace(/\\D/g, '');\n            const last4 = digits.slice(-4);\n            return `***-***-${last4}`;\n        };\n\n        return {\n            countryCode,\n            nationalNumber,\n            fullNumber,\n            maskedNumber: maskPhone(nationalNumber),\n            countryName,\n            updatesRequired\n        };\n\n    } catch (error) {\n        console.error('Error:', error.message);\n        throw new Error(`Phone normalization failed: ${error.message}`);\n    }\n}\n"
+              },
+              "outputSchema": {
+                "value": "{\n  \"output\": {\n    \"type\": \"object\",\n    \"properties\": {\n      \"countryCode\": { \"type\": \"string\" },\n      \"nationalNumber\": { \"type\": \"string\" },\n      \"fullNumber\": { \"type\": \"string\" },\n      \"maskedNumber\": { \"type\": \"string\" },\n      \"countryName\": { \"type\": \"string\" },\n      \"updatesRequired\": { \"type\": \"boolean\" }\n    }\n  }\n}\n"
+              },
+              "backgroundColor": {
+                "value": "#9b9b9bff"
+              },
+              "nodeTitle": {
+                "value": "Process Phone Number"
+              }
+            }
+          },
+          "position": {
+            "x": 1560,
+            "y": 420
+          },
+          "group": "nodes",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": false,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "ti4pg1nypl",
+            "nodeType": "EVAL",
+            "label": "Evaluator"
+          },
+          "position": {
+            "x": 1710,
+            "y": 420
+          },
+          "group": "nodes",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": false,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "sn40ytbz32",
+            "nodeType": "CONNECTION",
+            "connectionId": "867ed4363b2bc21c860085ad2baa817d",
+            "connectorId": "httpConnector",
+            "name": "Http",
+            "label": "Http",
+            "status": "configured",
+            "capabilityName": "customHtmlMessage",
+            "type": "trigger",
+            "properties": {
+              "message": {
+                "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"type\": \"link\",\n        \"src\": \"functions.svg\",\n        \"url\": \"output\",\n        \"data\": \"{{local.vsyonlyg5d.payload.output}}\",\n        \"tooltip\": \"{{local.vsyonlyg5d.payload.output}}\",\n        \"children\": [\n          {\n            \"text\": \"output\"\n          }\n        ]\n      },\n      {\n        \"text\": \"\"\n      }\n    ]\n  }\n]"
+              },
+              "showContinueButton": {
+                "value": true
+              }
+            }
+          },
+          "position": {
+            "x": 1890,
+            "y": 420
+          },
+          "group": "nodes",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": false,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "ij2b6x2fo1",
+            "nodeType": "EVAL",
+            "label": "Evaluator"
+          },
+          "position": {
+            "x": 2040,
+            "y": 420
+          },
+          "group": "nodes",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": false,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "4i5a643x90",
+            "nodeType": "CONNECTION",
+            "connectionId": "de650ca45593b82c49064ead10b9fe17",
+            "connectorId": "functionsConnector",
+            "name": "Functions",
+            "label": "Functions",
+            "status": "configured",
+            "capabilityName": "AEqualsB",
+            "type": "trigger",
+            "properties": {
+              "leftValueA": {
+                "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"type\": \"link\",\n        \"src\": \"functions.svg\",\n        \"url\": \"updatesRequired\",\n        \"data\": \"{{local.vsyonlyg5d.payload.output.updatesRequired}}\",\n        \"tooltip\": \"{{local.vsyonlyg5d.payload.output.updatesRequired}}\",\n        \"children\": [\n          {\n            \"text\": \"updatesRequired\"\n          }\n        ]\n      },\n      {\n        \"text\": \"\"\n      }\n    ]\n  }\n]"
+              },
+              "rightValueB": {
+                "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"true\"\n      }\n    ]\n  }\n]"
+              },
+              "caseSensitive": {
+                "value": false
+              },
+              "nodeTitle": {
+                "value": "Updates Required?"
+              },
+              "backgroundColor": {
+                "value": "#9b9b9bff"
+              }
+            }
+          },
+          "position": {
+            "x": 2190,
+            "y": 420
+          },
+          "group": "nodes",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": false,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "3v5l097nq0",
+            "nodeType": "CONNECTION",
+            "connectionId": "94141bf2f1b9b59a5f5365ff135e02bb",
+            "connectorId": "pingOneSSOConnector",
+            "name": "PingOne",
+            "label": "PingOne",
+            "status": "configured",
+            "capabilityName": "userLookup",
+            "type": "action",
+            "properties": {
+              "matchAttributes": {
+                "value": [
+                  "username"
+                ]
+              },
+              "userIdentifierForFindUser": {
+                "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"tktest\"\n      }\n    ]\n  }\n]"
+              }
+            }
+          },
+          "position": {
+            "x": 960,
+            "y": 420
+          },
+          "group": "nodes",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": false,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "kzlvbt7s6k",
+            "nodeType": "EVAL"
+          },
+          "position": {
+            "x": 1110,
+            "y": 420
+          },
+          "group": "nodes",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": false,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "s3myntfrvy",
+            "nodeType": "CONNECTION",
+            "connectionId": "867ed4363b2bc21c860085ad2baa817d",
+            "connectorId": "httpConnector",
+            "name": "Http",
+            "label": "Http",
+            "status": "configured",
+            "capabilityName": "customHtmlMessage",
+            "type": "trigger",
+            "properties": {
+              "message": {
+                "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"Phone: \"\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"type\": \"link\",\n        \"src\": \"url:3v5l097nq0\",\n        \"url\": \"primaryPhone\",\n        \"data\": \"{{local.3v5l097nq0.payload.output.matchedUser.primaryPhone}}\",\n        \"tooltip\": \"{{local.3v5l097nq0.payload.output.matchedUser.primaryPhone}}\",\n        \"children\": [\n          {\n            \"text\": \"{{local.3v5l097nq0.payload.output.matchedUser.primaryPhone}}\"\n          }\n        ]\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\\nCoutry Code: {{local.3v5l097nq0.payload.output.rawResponse.matchedUsers._embedded.users[0].phoneCountryCode}}\"\n      },\n      {\n        \"text\": \"\"\n      }\n    ]\n  }\n]"
+              },
+              "showContinueButton": {
+                "value": true
+              }
+            }
+          },
+          "position": {
+            "x": 1260,
+            "y": 420
+          },
+          "group": "nodes",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": false,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "rdd9mt6u0m",
+            "nodeType": "EVAL"
+          },
+          "position": {
+            "x": 1410,
+            "y": 420
+          },
+          "group": "nodes",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": false,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "5vni0bay2v",
+            "nodeType": "EVAL",
+            "label": "Evaluator",
+            "properties": {
+              "vn43iq2427": {
+                "value": "anyTriggersFalse"
+              }
+            }
+          },
+          "position": {
+            "x": 2370,
+            "y": 420
+          },
+          "group": "nodes",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": false,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "b3tzfj9aos",
+            "nodeType": "CONNECTION",
+            "connectionId": "94141bf2f1b9b59a5f5365ff135e02bb",
+            "connectorId": "pingOneSSOConnector",
+            "name": "PingOne",
+            "label": "PingOne",
+            "status": "configured",
+            "capabilityName": "updateUser",
+            "type": "action",
+            "properties": {
+              "additionalUserProperties": {
+                "value": [
+                  {
+                    "name": "phoneCountryCode",
+                    "preferredDataType": "string",
+                    "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"type\": \"link\",\n        \"src\": \"functions.svg\",\n        \"url\": \"countryCode\",\n        \"data\": \"{{local.vsyonlyg5d.payload.output.countryCode}}\",\n        \"tooltip\": \"{{local.vsyonlyg5d.payload.output.countryCode}}\",\n        \"children\": [\n          {\n            \"text\": \"countryCode\"\n          }\n        ]\n      },\n      {\n        \"text\": \"\"\n      }\n    ]\n  }\n]"
+                  }
+                ]
+              },
+              "matchAttribute": {
+                "value": "id"
+              },
+              "identifier": {
+                "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"type\": \"link\",\n        \"src\": \"pingIdentity.svg\",\n        \"url\": \"id\",\n        \"data\": \"{{local.3v5l097nq0.payload.output.matchedUser.id}}\",\n        \"tooltip\": \"{{local.3v5l097nq0.payload.output.matchedUser.id}}\",\n        \"children\": [\n          {\n            \"text\": \"id\"\n          }\n        ]\n      },\n      {\n        \"text\": \"\"\n      }\n    ]\n  }\n]"
+              },
+              "username": {
+                "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"type\": \"link\",\n        \"src\": \"pingIdentity.svg\",\n        \"url\": \"username\",\n        \"data\": \"{{local.3v5l097nq0.payload.output.matchedUser.username}}\",\n        \"tooltip\": \"{{local.3v5l097nq0.payload.output.matchedUser.username}}\",\n        \"children\": [\n          {\n            \"text\": \"username\"\n          }\n        ]\n      },\n      {\n        \"text\": \"\"\n      }\n    ]\n  }\n]"
+              },
+              "primaryPhone": {
+                "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"type\": \"link\",\n        \"src\": \"functions.svg\",\n        \"url\": \"nationalNumber\",\n        \"data\": \"{{local.vsyonlyg5d.payload.output.nationalNumber}}\",\n        \"tooltip\": \"{{local.vsyonlyg5d.payload.output.nationalNumber}}\",\n        \"children\": [\n          {\n            \"text\": \"nationalNumber\"\n          }\n        ]\n      },\n      {\n        \"text\": \"\"\n      }\n    ]\n  }\n]"
+              }
+            }
+          },
+          "position": {
+            "x": 2520,
+            "y": 420
+          },
+          "group": "nodes",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": false,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "vn43iq2427",
+            "nodeType": "CONNECTION",
+            "connectionId": "867ed4363b2bc21c860085ad2baa817d",
+            "connectorId": "httpConnector",
+            "name": "Http",
+            "label": "Http",
+            "status": "configured",
+            "capabilityName": "customHtmlMessage",
+            "type": "trigger",
+            "properties": {
+              "message": {
+                "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"No Updates Required\"\n      }\n    ]\n  }\n]"
+              }
+            }
+          },
+          "position": {
+            "x": 2520,
+            "y": 570
+          },
+          "group": "nodes",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": false,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "077zctly6b",
+            "nodeType": "EVAL"
+          },
+          "position": {
+            "x": 1350,
+            "y": 210
+          },
+          "group": "nodes",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": false,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "wfpqwgy1q3",
+            "nodeType": "CONNECTION",
+            "connectionId": "06922a684039827499bdbdd97f49827b",
+            "connectorId": "variablesConnector",
+            "name": "Variables",
+            "label": "Variables",
+            "status": "configured",
+            "capabilityName": "saveValue",
+            "type": "trigger",
+            "properties": {
+              "saveVariables": {
+                "value": [
+                  {
+                    "name": "action",
+                    "value": null,
+                    "key": 0.4109458124448059,
+                    "label": "action (string - flowInstance)",
+                    "type": "string"
+                  }
+                ]
+              }
+            }
+          },
+          "position": {
+            "x": 210,
+            "y": 600
+          },
+          "group": "nodes",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": false,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "5c44by0faa",
+            "nodeType": "EVAL"
+          },
+          "position": {
+            "x": 180,
+            "y": 420
+          },
+          "group": "nodes",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": false,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "u5094i08xd",
+            "nodeType": "CONNECTION",
+            "connectionId": "2b2d3b4b4de50154654983267e779c63",
+            "connectorId": "pingOneFormsConnector",
+            "name": "PingOne Forms",
+            "label": "PingOne Forms",
+            "status": "configured",
+            "capabilityName": "customForm",
+            "type": "action",
+            "properties": {
+              "formData": {
+                "value": [
+                  {
+                    "key": "phone-field",
+                    "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"+27218633148\"\n      }\n    ]\n  }\n]"
+                  },
+                  {
+                    "key": "phone-field1",
+                    "value": ""
+                  },
+                  {
+                    "key": "IntCode",
+                    "value": ""
+                  },
+                  {
+                    "key": "phoneNumber",
+                    "value": ""
+                  }
+                ]
+              },
+              "dynamicText": {
+                "value": []
+              },
+              "form": {
+                "value": "92992986-a5f3-4574-9317-41d4279274ca"
+              }
+            }
+          },
+          "position": {
+            "x": 427,
+            "y": 422.7222137451172
+          },
+          "group": "nodes",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": false,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "q6yaoqg2ws",
+            "nodeType": "EVAL"
+          },
+          "position": {
+            "x": 540,
+            "y": 420
+          },
+          "group": "nodes",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": false,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "c2xxq52179",
+            "nodeType": "CONNECTION",
+            "connectionId": "867ed4363b2bc21c860085ad2baa817d",
+            "connectorId": "httpConnector",
+            "name": "Http",
+            "label": "Http",
+            "status": "configured",
+            "capabilityName": "customHTMLTemplate",
+            "type": "trigger",
+            "properties": {
+              "nodeDescription": {
+                "value": "{{local.u5094i08xd.payload.output}}"
+              }
+            }
+          },
+          "position": {
+            "x": 690,
+            "y": 420
+          },
+          "group": "nodes",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": false,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "pfqjxkf9gp",
+            "nodeType": "EVAL"
+          },
+          "position": {
+            "x": 825,
+            "y": 420
+          },
+          "group": "nodes",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": false,
+          "classes": ""
+        }
+      ],
+      "edges": [
+        {
+          "data": {
+            "id": "al46h85utr",
+            "source": "3v5l097nq0",
+            "target": "kzlvbt7s6k"
+          },
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "group": "edges",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": true,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "nv5r19yd5x",
+            "source": "ij2b6x2fo1",
+            "target": "4i5a643x90"
+          },
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "group": "edges",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": true,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "pu7e8rm73e",
+            "source": "vsyonlyg5d",
+            "target": "ti4pg1nypl"
+          },
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "group": "edges",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": true,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "z1x4ibj537",
+            "source": "ti4pg1nypl",
+            "target": "sn40ytbz32"
+          },
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "group": "edges",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": true,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "s7e4wu5fqc",
+            "source": "sn40ytbz32",
+            "target": "ij2b6x2fo1"
+          },
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "group": "edges",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": true,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "bvq7vy0b0x",
+            "source": "kzlvbt7s6k",
+            "target": "s3myntfrvy"
+          },
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "group": "edges",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": true,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "9rt5numfqu",
+            "source": "s3myntfrvy",
+            "target": "rdd9mt6u0m"
+          },
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "group": "edges",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": true,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "tnwkuq88kl",
+            "source": "rdd9mt6u0m",
+            "target": "vsyonlyg5d"
+          },
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "group": "edges",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": true,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "657otawnus",
+            "source": "4i5a643x90",
+            "target": "5vni0bay2v"
+          },
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "group": "edges",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": true,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "quq78o22ms",
+            "source": "5vni0bay2v",
+            "target": "b3tzfj9aos"
+          },
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "group": "edges",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": true,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "7u8qn9bqqk",
+            "source": "5vni0bay2v",
+            "target": "vn43iq2427"
+          },
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "group": "edges",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": true,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "9b9yg6s7vp",
+            "source": "b3tzfj9aos",
+            "target": "077zctly6b"
+          },
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "group": "edges",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": true,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "hufupz3tet",
+            "source": "077zctly6b",
+            "target": "3v5l097nq0"
+          },
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "group": "edges",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": true,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "gz1jr0mrpt",
+            "source": "wfpqwgy1q3",
+            "target": "5c44by0faa"
+          },
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "group": "edges",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": true,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "3x9p7hoa2v",
+            "source": "5c44by0faa",
+            "target": "u5094i08xd"
+          },
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "group": "edges",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": true,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "ckoucld6q3",
+            "source": "u5094i08xd",
+            "target": "q6yaoqg2ws"
+          },
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "group": "edges",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": true,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "1kbbluoifh",
+            "source": "q6yaoqg2ws",
+            "target": "c2xxq52179"
+          },
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "group": "edges",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": true,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "i82srbrs1z",
+            "source": "c2xxq52179",
+            "target": "pfqjxkf9gp"
+          },
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "group": "edges",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": true,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "t0grpz6n6i",
+            "source": "pfqjxkf9gp",
+            "target": "3v5l097nq0"
+          },
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "group": "edges",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": true,
+          "classes": ""
+        }
+      ]
+    },
+    "data": {},
+    "zoomingEnabled": true,
+    "userZoomingEnabled": true,
+    "zoom": 1,
+    "minZoom": 1e-50,
+    "maxZoom": 1e+50,
+    "panningEnabled": true,
+    "userPanningEnabled": true,
+    "pan": {
+      "x": 0,
+      "y": 0
+    },
+    "boxSelectionEnabled": true,
+    "renderer": {
+      "name": "null"
+    }
+  },
+  "trigger": {
+    "type": "AUTHENTICATION"
+  },
+  "deployedAt": "2026-01-12T14:30:52.090Z"
+}
