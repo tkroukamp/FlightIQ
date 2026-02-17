@@ -1,0 +1,15 @@
+{
+  "kind": "fiq.variables",
+  "exportedAt": "2026-02-17T21:25:46.945Z",
+  "environmentId": "102bfeb8-b897-446d-bb21-39eb39ace38d",
+  "environmentName": "Test Source",
+  "variable": {
+    "id": "4e288506-0912-4fe8-ad2f-80356743dd2f",
+    "name": "isMFAAuthnReq",
+    "context": "flowInstance",
+    "dataType": "string",
+    "description": "",
+    "mutable": true,
+    "updatedAt": "2026-02-17T18:04:33.516Z"
+  }
+}
