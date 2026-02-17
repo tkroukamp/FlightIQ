@@ -1,0 +1,16 @@
+{
+  "kind": "fiq.variables",
+  "exportedAt": "2026-02-17T17:27:44.188Z",
+  "environmentId": "a9111663-d043-42db-a018-59feea4e9861",
+  "environmentName": "ID05 - MVC MFA",
+  "variable": {
+    "id": "c902d224-eec4-4555-8369-c70a04537eb2",
+    "name": "rcdcLoggedInContactUs",
+    "context": "company",
+    "dataType": "string",
+    "description": "RCDC Logged in Contact Owner services URL",
+    "mutable": true,
+    "updatedAt": "2026-01-14T16:15:54.290Z",
+    "value": "https://id05.www.myritzcarltonclub.com/en-us/request/contactUs.do"
+  }
+}
