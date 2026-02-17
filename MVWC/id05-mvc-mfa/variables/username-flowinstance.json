@@ -4,12 +4,12 @@
   "environmentId": "a9111663-d043-42db-a018-59feea4e9861",
   "environmentName": "ID05 - MVC MFA",
   "variable": {
-    "id": "558c7935-1feb-43cb-ab5a-48c80e93adfb",
-    "name": "username",
+    "id": "aa0e00f5-52e4-45c6-89d3-9afb7f8330bc",
+    "name": "Username",
     "context": "flowInstance",
     "dataType": "string",
     "description": "",
     "mutable": true,
-    "updatedAt": "2025-08-20T11:28:52.137Z"
+    "updatedAt": "2025-05-27T18:01:19.242Z"
   }
 }
