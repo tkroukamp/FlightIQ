@@ -1,0 +1,16 @@
+{
+  "kind": "fiq.variables",
+  "exportedAt": "2026-02-17T17:27:44.187Z",
+  "environmentId": "a9111663-d043-42db-a018-59feea4e9861",
+  "environmentName": "ID05 - MVC MFA",
+  "variable": {
+    "id": "0a67746d-905a-4f4c-a317-8d2fec50a1ec",
+    "name": "mobileBaseUrl",
+    "context": "company",
+    "dataType": "string",
+    "description": "BaseURL for password reset link",
+    "mutable": true,
+    "updatedAt": "2025-11-29T04:31:46.995Z",
+    "value": "https://id05-login.marriottvacationclub.com"
+  }
+}
