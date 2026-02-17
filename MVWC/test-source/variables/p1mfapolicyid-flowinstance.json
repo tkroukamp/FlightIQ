@@ -1,0 +1,15 @@
+{
+  "kind": "fiq.variables",
+  "exportedAt": "2026-02-17T21:25:46.945Z",
+  "environmentId": "102bfeb8-b897-446d-bb21-39eb39ace38d",
+  "environmentName": "Test Source",
+  "variable": {
+    "id": "afae5338-9cb0-4e48-a832-0f519c66ee90",
+    "name": "p1MFAPolicyId",
+    "context": "flowInstance",
+    "dataType": "string",
+    "description": "",
+    "mutable": true,
+    "updatedAt": "2026-02-17T18:04:34.636Z"
+  }
+}
