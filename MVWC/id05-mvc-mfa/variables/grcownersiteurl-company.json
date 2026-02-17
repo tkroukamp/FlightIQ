@@ -1,0 +1,16 @@
+{
+  "kind": "fiq.variables",
+  "exportedAt": "2026-02-17T17:27:44.187Z",
+  "environmentId": "a9111663-d043-42db-a018-59feea4e9861",
+  "environmentName": "ID05 - MVC MFA",
+  "variable": {
+    "id": "2950dc22-62e2-4a38-80c9-9ccf62cec6cd",
+    "name": "grcOwnerSiteUrl",
+    "context": "company",
+    "dataType": "string",
+    "description": "Grand Residence Club Owner Site",
+    "mutable": true,
+    "updatedAt": "2025-11-27T18:39:52.082Z",
+    "value": "https://id05.www.grandresidenceclub.com/default.shtml"
+  }
+}
