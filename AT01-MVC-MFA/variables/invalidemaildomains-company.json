@@ -1,0 +1,16 @@
+{
+  "kind": "fiq.variables",
+  "exportedAt": "2026-02-21T17:31:04.833Z",
+  "environmentId": "d424a7ed-a11e-4957-b7bd-6c7d7ca4c623",
+  "environmentName": "AT01-MVC-MFA",
+  "variable": {
+    "id": "fe3d14dd-3eb2-4b77-abd9-df15dcfdf7c4",
+    "name": "invalidEmailDomains",
+    "context": "company",
+    "dataType": "string",
+    "description": "",
+    "mutable": true,
+    "updatedAt": "2026-02-20T05:32:51.232Z",
+    "value": "yopmail.com, vacationclub.com, mvwc.com, intervalintl.com"
+  }
+}
