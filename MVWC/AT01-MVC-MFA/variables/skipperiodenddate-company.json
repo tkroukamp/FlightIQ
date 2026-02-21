@@ -1,0 +1,16 @@
+{
+  "kind": "fiq.variables",
+  "exportedAt": "2026-02-21T17:31:33.916Z",
+  "environmentId": "d424a7ed-a11e-4957-b7bd-6c7d7ca4c623",
+  "environmentName": "AT01-MVC-MFA",
+  "variable": {
+    "id": "137a6754-3e35-471c-9e04-fd8d57f2a24b",
+    "name": "skipPeriodEndDate",
+    "context": "company",
+    "dataType": "string",
+    "description": "Mfa Skip period end Date",
+    "mutable": true,
+    "updatedAt": "2026-02-20T05:32:51.232Z",
+    "value": "12/31/2025"
+  }
+}
