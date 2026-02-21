@@ -1,0 +1,15 @@
+{
+  "kind": "fiq.variables",
+  "exportedAt": "2026-02-21T17:30:36.248Z",
+  "environmentId": "d424a7ed-a11e-4957-b7bd-6c7d7ca4c623",
+  "environmentName": "AT01-MVC-MFA",
+  "variable": {
+    "id": "24efffba-fd43-4073-aa64-48422a3d18ba",
+    "name": "vcapOwnerSiteUrl",
+    "context": "flowInstance",
+    "dataType": "string",
+    "description": "",
+    "mutable": true,
+    "updatedAt": "2026-02-20T05:32:51.232Z"
+  }
+}
