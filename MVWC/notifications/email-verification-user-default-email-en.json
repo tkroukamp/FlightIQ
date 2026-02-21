@@ -1,0 +1,36 @@
+{
+  "kind": "fiq.notification-templates",
+  "exportedAt": "2026-02-21T17:52:49.476Z",
+  "environmentId": "2f14d30a-65a0-4884-b523-88495507fe43",
+  "environmentName": "MVWC",
+  "templateName": "email_verification_user",
+  "content": {
+    "_links": {
+      "template": {
+        "href": "https://api.pingone.com/v1/environments/2f14d30a-65a0-4884-b523-88495507fe43/templates/email_verification_user"
+      },
+      "environment": {
+        "href": "https://api.pingone.com/v1/environments/2f14d30a-65a0-4884-b523-88495507fe43"
+      },
+      "self": {
+        "href": "https://api.pingone.com/v1/environments/2f14d30a-65a0-4884-b523-88495507fe43/templates/email_verification_user/contents/845ea947-1706-79ec-2fec-2d3ee8410119"
+      }
+    },
+    "id": "845ea947-1706-79ec-2fec-2d3ee8410119",
+    "environment": {
+      "id": "2f14d30a-65a0-4884-b523-88495507fe43"
+    },
+    "createdAt": "2022-09-19T00:00:00.000Z",
+    "updatedAt": "2022-09-26T00:00:00.000Z",
+    "locale": "en",
+    "template": {
+      "id": "email_verification_user"
+    },
+    "subject": "Verify your email address",
+    "body": "<p>\nUse the code provided to verify your email address with PingOne.\n</p>\n<p>\nTo verify your email address:\n<ol type=\"1\">\n  <li>Sign-on to the self-service portal. For instructions, see <a href=\"https://docs.pingidentity.com/bundle/pingone/page/snd1631892368614.html\">Managing your PingOne user profile</a>.</li>\n  <li>Enter your verification code in the <b>Contact</b> section: ${code}</li>\n  <li>Click <b>Verify</b>.</li>\n</ol>\n</p>",
+    "deliveryMethod": "Email",
+    "default": true,
+    "group": "Email Address Verification (User)",
+    "templateName": "email_verification_user"
+  }
+}
