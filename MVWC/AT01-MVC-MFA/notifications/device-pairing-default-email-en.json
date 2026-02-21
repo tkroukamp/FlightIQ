@@ -1,0 +1,36 @@
+{
+  "kind": "fiq.notification-templates",
+  "exportedAt": "2026-02-21T18:00:14.123Z",
+  "environmentId": "d424a7ed-a11e-4957-b7bd-6c7d7ca4c623",
+  "environmentName": "AT01-MVC-MFA",
+  "templateName": "device_pairing",
+  "content": {
+    "_links": {
+      "template": {
+        "href": "https://api.pingone.com/v1/environments/d424a7ed-a11e-4957-b7bd-6c7d7ca4c623/templates/device_pairing"
+      },
+      "environment": {
+        "href": "https://api.pingone.com/v1/environments/d424a7ed-a11e-4957-b7bd-6c7d7ca4c623"
+      },
+      "self": {
+        "href": "https://api.pingone.com/v1/environments/d424a7ed-a11e-4957-b7bd-6c7d7ca4c623/templates/device_pairing/contents/35d1a8b1-1e25-7646-2c25-b0176871cb88"
+      }
+    },
+    "id": "35d1a8b1-1e25-7646-2c25-b0176871cb88",
+    "environment": {
+      "id": "d424a7ed-a11e-4957-b7bd-6c7d7ca4c623"
+    },
+    "createdAt": "2018-12-17T13:34:36.000Z",
+    "updatedAt": "2018-12-17T13:34:36.000Z",
+    "locale": "en",
+    "template": {
+      "id": "device_pairing"
+    },
+    "subject": "PingOne: Finish pairing your device",
+    "body": "To finish pairing your device, enter this code: ${otp}",
+    "deliveryMethod": "Email",
+    "default": true,
+    "group": "Device Pairing",
+    "templateName": "device_pairing"
+  }
+}
