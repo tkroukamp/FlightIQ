@@ -1,0 +1,36 @@
+{
+  "kind": "fiq.notification-templates",
+  "exportedAt": "2026-02-21T17:54:11.447Z",
+  "environmentId": "d424a7ed-a11e-4957-b7bd-6c7d7ca4c623",
+  "environmentName": "AT01-MVC-MFA",
+  "templateName": "transaction",
+  "content": {
+    "_links": {
+      "template": {
+        "href": "https://api.pingone.com/v1/environments/d424a7ed-a11e-4957-b7bd-6c7d7ca4c623/templates/transaction"
+      },
+      "environment": {
+        "href": "https://api.pingone.com/v1/environments/d424a7ed-a11e-4957-b7bd-6c7d7ca4c623"
+      },
+      "self": {
+        "href": "https://api.pingone.com/v1/environments/d424a7ed-a11e-4957-b7bd-6c7d7ca4c623/templates/transaction/contents/b8dcb47c-8630-7051-0f41-323936fc379d"
+      }
+    },
+    "id": "b8dcb47c-8630-7051-0f41-323936fc379d",
+    "environment": {
+      "id": "d424a7ed-a11e-4957-b7bd-6c7d7ca4c623"
+    },
+    "createdAt": "2020-03-18T09:42:00.705Z",
+    "updatedAt": "2020-03-18T09:42:00.705Z",
+    "locale": "en",
+    "template": {
+      "id": "transaction"
+    },
+    "subject": "PingOne Transaction Request",
+    "body": "Please approve this transaction with passcode ${otp}.",
+    "deliveryMethod": "Email",
+    "default": true,
+    "group": "Transaction",
+    "templateName": "transaction"
+  }
+}
