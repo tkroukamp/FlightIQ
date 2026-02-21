@@ -1,0 +1,40 @@
+{
+  "kind": "fiq.forms",
+  "exportedAt": "2026-02-21T18:17:20.714Z",
+  "environmentId": "d424a7ed-a11e-4957-b7bd-6c7d7ca4c623",
+  "environmentName": "AT01-MVC-MFA",
+  "form": {
+    "_links": {
+      "self": {
+        "href": "https://api.pingone.com/v1/environments/d424a7ed-a11e-4957-b7bd-6c7d7ca4c623/forms/2ef0edf9-0230-4a90-ba8a-f57c1a52d0f0"
+      }
+    },
+    "id": "2ef0edf9-0230-4a90-ba8a-f57c1a52d0f0",
+    "environment": {
+      "id": "d424a7ed-a11e-4957-b7bd-6c7d7ca4c623"
+    },
+    "name": "Example - Sign On",
+    "description": "This is an out-of-the-box sign on form that prompts for username and password.",
+    "category": "CUSTOM",
+    "cols": 4,
+    "markOptional": true,
+    "markRequired": false,
+    "textAutoCompleteEnabled": false,
+    "passwordAutoCompleteEnabled": false,
+    "fieldTypes": [
+      "ERROR_DISPLAY",
+      "SLATE_TEXTBLOB",
+      "PASSWORD",
+      "SUBMIT_BUTTON",
+      "TEXT"
+    ],
+    "languageBundle": {
+      "button.text.signOn": "Sign On",
+      "fields.user.username.label": "Username",
+      "fields.user.password.label": "Password"
+    },
+    "created": "2026-01-12T17:49:31.254Z",
+    "modified": "2026-01-28T15:16:31.478Z",
+    "readOnly": false
+  }
+}
