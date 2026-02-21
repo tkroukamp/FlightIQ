@@ -1,0 +1,16 @@
+{
+  "kind": "fiq.variables",
+  "exportedAt": "2026-02-21T17:30:36.248Z",
+  "environmentId": "d424a7ed-a11e-4957-b7bd-6c7d7ca4c623",
+  "environmentName": "AT01-MVC-MFA",
+  "variable": {
+    "id": "f73a70a4-70a6-4289-b733-6a95f845761d",
+    "name": "vse_companyID",
+    "context": "company",
+    "dataType": "string",
+    "description": "",
+    "mutable": true,
+    "updatedAt": "2026-02-20T05:32:51.232Z",
+    "value": "102eff72-5b86-43e9-be7c-8d991c52bd79"
+  }
+}
