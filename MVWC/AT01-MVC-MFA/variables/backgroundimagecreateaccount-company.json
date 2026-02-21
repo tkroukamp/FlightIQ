@@ -1,0 +1,16 @@
+{
+  "kind": "fiq.variables",
+  "exportedAt": "2026-02-21T17:31:33.915Z",
+  "environmentId": "d424a7ed-a11e-4957-b7bd-6c7d7ca4c623",
+  "environmentName": "AT01-MVC-MFA",
+  "variable": {
+    "id": "27b2bc60-21c8-457d-b758-87827c24df45",
+    "name": "backGroundImageCreateAccount",
+    "context": "company",
+    "dataType": "string",
+    "description": "Back Ground Image for Create ACcount",
+    "mutable": false,
+    "updatedAt": "2026-02-20T05:32:51.232Z",
+    "value": "https://at01-login.marriottvacationclub.com/assets/davinci/static-create-account-bg-reactive.html"
+  }
+}
