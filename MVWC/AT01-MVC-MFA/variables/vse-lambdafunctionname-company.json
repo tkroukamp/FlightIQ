@@ -1,0 +1,16 @@
+{
+  "kind": "fiq.variables",
+  "exportedAt": "2026-02-21T17:30:36.248Z",
+  "environmentId": "d424a7ed-a11e-4957-b7bd-6c7d7ca4c623",
+  "environmentName": "AT01-MVC-MFA",
+  "variable": {
+    "id": "55d15f30-f42b-4fff-8400-46a24cc9e78b",
+    "name": "vse_lambdaFunctionName",
+    "context": "company",
+    "dataType": "string",
+    "description": "VSE Lambda function name",
+    "mutable": true,
+    "updatedAt": "2026-02-20T05:32:51.232Z",
+    "value": "arn:aws:lambda:us-east-1:133186899365:function:qa-CognitoUserOpsHandler"
+  }
+}
