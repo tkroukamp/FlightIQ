@@ -1,0 +1,37 @@
+{
+  "kind": "fiq.notification-templates",
+  "exportedAt": "2026-02-21T17:52:49.477Z",
+  "environmentId": "2f14d30a-65a0-4884-b523-88495507fe43",
+  "environmentName": "MVWC",
+  "templateName": "general",
+  "content": {
+    "_links": {
+      "template": {
+        "href": "https://api.pingone.com/v1/environments/2f14d30a-65a0-4884-b523-88495507fe43/templates/general"
+      },
+      "environment": {
+        "href": "https://api.pingone.com/v1/environments/2f14d30a-65a0-4884-b523-88495507fe43"
+      },
+      "self": {
+        "href": "https://api.pingone.com/v1/environments/2f14d30a-65a0-4884-b523-88495507fe43/templates/general/contents/d626f454-5e93-4a80-8c03-16d3022e81a8"
+      }
+    },
+    "id": "d626f454-5e93-4a80-8c03-16d3022e81a8",
+    "environment": {
+      "id": "2f14d30a-65a0-4884-b523-88495507fe43"
+    },
+    "createdAt": "2025-12-30T16:51:41.340Z",
+    "updatedAt": "2025-12-30T17:57:50.374Z",
+    "locale": "en",
+    "variant": "Test 3",
+    "template": {
+      "id": "general"
+    },
+    "subject": "Custom email notificationX",
+    "body": "Enter your custom message hereXXX",
+    "deliveryMethod": "Email",
+    "default": false,
+    "group": "General",
+    "templateName": "general"
+  }
+}
