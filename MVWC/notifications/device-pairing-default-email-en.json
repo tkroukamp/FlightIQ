@@ -1,0 +1,36 @@
+{
+  "kind": "fiq.notification-templates",
+  "exportedAt": "2026-02-21T17:52:49.476Z",
+  "environmentId": "2f14d30a-65a0-4884-b523-88495507fe43",
+  "environmentName": "MVWC",
+  "templateName": "device_pairing",
+  "content": {
+    "_links": {
+      "template": {
+        "href": "https://api.pingone.com/v1/environments/2f14d30a-65a0-4884-b523-88495507fe43/templates/device_pairing"
+      },
+      "environment": {
+        "href": "https://api.pingone.com/v1/environments/2f14d30a-65a0-4884-b523-88495507fe43"
+      },
+      "self": {
+        "href": "https://api.pingone.com/v1/environments/2f14d30a-65a0-4884-b523-88495507fe43/templates/device_pairing/contents/cee1dc56-da9b-7795-2ebb-542341d2f3e8"
+      }
+    },
+    "id": "cee1dc56-da9b-7795-2ebb-542341d2f3e8",
+    "environment": {
+      "id": "2f14d30a-65a0-4884-b523-88495507fe43"
+    },
+    "createdAt": "2018-12-17T13:34:36.000Z",
+    "updatedAt": "2018-12-17T13:34:36.000Z",
+    "locale": "en",
+    "template": {
+      "id": "device_pairing"
+    },
+    "subject": "PingOne: Finish pairing your device",
+    "body": "To finish pairing your device, enter this code: ${otp}",
+    "deliveryMethod": "Email",
+    "default": true,
+    "group": "Device Pairing",
+    "templateName": "device_pairing"
+  }
+}
