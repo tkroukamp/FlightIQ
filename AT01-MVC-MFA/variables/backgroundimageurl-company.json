@@ -1,0 +1,16 @@
+{
+  "kind": "fiq.variables",
+  "exportedAt": "2026-02-21T17:31:04.832Z",
+  "environmentId": "d424a7ed-a11e-4957-b7bd-6c7d7ca4c623",
+  "environmentName": "AT01-MVC-MFA",
+  "variable": {
+    "id": "e14caace-666d-40cf-95d9-a3d608e93779",
+    "name": "backGroundImageUrl",
+    "context": "company",
+    "dataType": "string",
+    "description": "Back ground Login Page Image",
+    "mutable": false,
+    "updatedAt": "2026-02-20T05:32:51.232Z",
+    "value": "https://at01-login.marriottvacationclub.com/assets/davinci/static-login-bg-reactive.html"
+  }
+}
