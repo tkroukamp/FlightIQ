@@ -1,0 +1,16 @@
+{
+  "kind": "fiq.variables",
+  "exportedAt": "2026-02-21T17:31:04.833Z",
+  "environmentId": "d424a7ed-a11e-4957-b7bd-6c7d7ca4c623",
+  "environmentName": "AT01-MVC-MFA",
+  "variable": {
+    "id": "677e9c09-ebae-4f8f-969e-c50c12e558a9",
+    "name": "mobileDomain",
+    "context": "company",
+    "dataType": "string",
+    "description": "domain to send password reset link",
+    "mutable": true,
+    "updatedAt": "2026-02-20T05:32:51.232Z",
+    "value": "marriottvacationclub.com"
+  }
+}
