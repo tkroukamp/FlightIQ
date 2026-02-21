@@ -1,0 +1,16 @@
+{
+  "kind": "fiq.variables",
+  "exportedAt": "2026-02-21T17:31:33.916Z",
+  "environmentId": "d424a7ed-a11e-4957-b7bd-6c7d7ca4c623",
+  "environmentName": "AT01-MVC-MFA",
+  "variable": {
+    "id": "623b2eef-7779-4e2a-a459-ce685f57d8d3",
+    "name": "rcdcOwnerSiteUrl",
+    "context": "company",
+    "dataType": "string",
+    "description": "My Ritz Carlton Club Owner Site URL",
+    "mutable": true,
+    "updatedAt": "2026-02-20T05:32:51.232Z",
+    "value": "https://at01.www.myritzcarltonclub.com"
+  }
+}
