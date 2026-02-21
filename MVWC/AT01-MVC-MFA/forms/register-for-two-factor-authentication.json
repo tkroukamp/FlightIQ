@@ -1,0 +1,36 @@
+{
+  "kind": "fiq.forms",
+  "exportedAt": "2026-02-21T18:17:20.714Z",
+  "environmentId": "d424a7ed-a11e-4957-b7bd-6c7d7ca4c623",
+  "environmentName": "AT01-MVC-MFA",
+  "form": {
+    "_links": {
+      "self": {
+        "href": "https://api.pingone.com/v1/environments/d424a7ed-a11e-4957-b7bd-6c7d7ca4c623/forms/650d8929-ed23-4c0e-9acc-89e1e8c1b865"
+      }
+    },
+    "id": "650d8929-ed23-4c0e-9acc-89e1e8c1b865",
+    "environment": {
+      "id": "d424a7ed-a11e-4957-b7bd-6c7d7ca4c623"
+    },
+    "name": "Register for Two-Factor Authentication",
+    "description": "Imported 2026-01-12T17:59:07.859Z with flow: \"LIVE - [MAIN FLOW - Ver 1.0.0] - MOBILE - Root\". ",
+    "category": "CUSTOM",
+    "cols": 4,
+    "markOptional": true,
+    "markRequired": false,
+    "textAutoCompleteEnabled": false,
+    "passwordAutoCompleteEnabled": false,
+    "fieldTypes": [
+      "ERROR_DISPLAY",
+      "SLATE_TEXTBLOB",
+      "RADIO",
+      "PHONE_NUMBER",
+      "SUBMIT_BUTTON",
+      "TEXT"
+    ],
+    "created": "2026-01-12T17:50:41.413Z",
+    "modified": "2026-01-13T01:45:44.094Z",
+    "readOnly": false
+  }
+}
