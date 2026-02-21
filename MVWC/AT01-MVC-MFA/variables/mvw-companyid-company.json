@@ -1,0 +1,16 @@
+{
+  "kind": "fiq.variables",
+  "exportedAt": "2026-02-21T17:31:33.916Z",
+  "environmentId": "d424a7ed-a11e-4957-b7bd-6c7d7ca4c623",
+  "environmentName": "AT01-MVC-MFA",
+  "variable": {
+    "id": "5764b580-135d-4f07-927b-b7248ba4dba4",
+    "name": "mvw_companyID",
+    "context": "company",
+    "dataType": "string",
+    "description": "Company ID for mvw env (companyID is mvw env ID for ST01)",
+    "mutable": false,
+    "updatedAt": "2026-02-20T05:32:51.232Z",
+    "value": "d424a7ed-a11e-4957-b7bd-6c7d7ca4c623"
+  }
+}
