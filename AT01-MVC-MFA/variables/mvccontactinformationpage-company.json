@@ -1,0 +1,16 @@
+{
+  "kind": "fiq.variables",
+  "exportedAt": "2026-02-21T17:31:04.833Z",
+  "environmentId": "d424a7ed-a11e-4957-b7bd-6c7d7ca4c623",
+  "environmentName": "AT01-MVC-MFA",
+  "variable": {
+    "id": "d95eccb2-3829-4f02-a943-10be79ee0181",
+    "name": "MVCContactInformationPage",
+    "context": "company",
+    "dataType": "string",
+    "description": "MVC Contact/Profile Page Link",
+    "mutable": false,
+    "updatedAt": "2026-02-20T05:32:51.232Z",
+    "value": "https://at01.owners.marriottvacationclub.com/timeshare/mvco/account/myprofile"
+  }
+}
