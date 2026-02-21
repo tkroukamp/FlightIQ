@@ -1,0 +1,16 @@
+{
+  "kind": "fiq.variables",
+  "exportedAt": "2026-02-21T17:31:33.916Z",
+  "environmentId": "d424a7ed-a11e-4957-b7bd-6c7d7ca4c623",
+  "environmentName": "AT01-MVC-MFA",
+  "variable": {
+    "id": "c4393891-facd-4095-b09a-2cd861b24f39",
+    "name": "maxResendCount",
+    "context": "company",
+    "dataType": "number",
+    "description": "",
+    "mutable": false,
+    "updatedAt": "2026-02-20T05:32:51.232Z",
+    "value": "5"
+  }
+}
