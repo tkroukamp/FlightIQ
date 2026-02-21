@@ -1,0 +1,36 @@
+{
+  "kind": "fiq.notification-templates",
+  "exportedAt": "2026-02-21T18:00:14.123Z",
+  "environmentId": "d424a7ed-a11e-4957-b7bd-6c7d7ca4c623",
+  "environmentName": "AT01-MVC-MFA",
+  "templateName": "verification_code_template",
+  "content": {
+    "_links": {
+      "template": {
+        "href": "https://api.pingone.com/v1/environments/d424a7ed-a11e-4957-b7bd-6c7d7ca4c623/templates/verification_code_template"
+      },
+      "environment": {
+        "href": "https://api.pingone.com/v1/environments/d424a7ed-a11e-4957-b7bd-6c7d7ca4c623"
+      },
+      "self": {
+        "href": "https://api.pingone.com/v1/environments/d424a7ed-a11e-4957-b7bd-6c7d7ca4c623/templates/verification_code_template/contents/b2dc3dba-6f2a-7770-3c47-fda5306ed01a"
+      }
+    },
+    "id": "b2dc3dba-6f2a-7770-3c47-fda5306ed01a",
+    "environment": {
+      "id": "d424a7ed-a11e-4957-b7bd-6c7d7ca4c623"
+    },
+    "createdAt": "2019-01-10T16:39:56.000Z",
+    "updatedAt": "2019-01-10T16:39:56.000Z",
+    "locale": "en",
+    "template": {
+      "id": "verification_code_template"
+    },
+    "subject": "Verify your email address",
+    "body": "<p>\nYour PingOne verification code is: <b>${code.value}</b>\n</p>\n<p>\nUse this code to verify your email address with PingOne. If you think you received this email in error, contact your administrator.\n</p>",
+    "deliveryMethod": "Email",
+    "default": true,
+    "group": "Verification Code",
+    "templateName": "verification_code_template"
+  }
+}
