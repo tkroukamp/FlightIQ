@@ -1,0 +1,36 @@
+{
+  "kind": "fiq.notification-templates",
+  "exportedAt": "2026-02-21T17:52:49.477Z",
+  "environmentId": "2f14d30a-65a0-4884-b523-88495507fe43",
+  "environmentName": "MVWC",
+  "templateName": "strong_authentication",
+  "content": {
+    "_links": {
+      "template": {
+        "href": "https://api.pingone.com/v1/environments/2f14d30a-65a0-4884-b523-88495507fe43/templates/strong_authentication"
+      },
+      "environment": {
+        "href": "https://api.pingone.com/v1/environments/2f14d30a-65a0-4884-b523-88495507fe43"
+      },
+      "self": {
+        "href": "https://api.pingone.com/v1/environments/2f14d30a-65a0-4884-b523-88495507fe43/templates/strong_authentication/contents/32d7570e-0606-75af-0fad-46216684b010"
+      }
+    },
+    "id": "32d7570e-0606-75af-0fad-46216684b010",
+    "environment": {
+      "id": "2f14d30a-65a0-4884-b523-88495507fe43"
+    },
+    "createdAt": "2018-08-27T05:34:51.000Z",
+    "updatedAt": "2018-12-17T13:34:36.000Z",
+    "locale": "en",
+    "template": {
+      "id": "strong_authentication"
+    },
+    "subject": "PingOne: New authentication request",
+    "body": "Your passcode is: ${otp}",
+    "deliveryMethod": "Email",
+    "default": true,
+    "group": "Strong Authentication",
+    "templateName": "strong_authentication"
+  }
+}
