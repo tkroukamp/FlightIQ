@@ -1,0 +1,28 @@
+{
+  "_links": {
+    "self": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/schemas/9fb6d2c4-d30b-4f77-9a36-558e953414e5/attributes/08de4166-7828-4884-8614-7c99e8dc66c8"
+    },
+    "environment": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+    },
+    "schema": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/schemas/9fb6d2c4-d30b-4f77-9a36-558e953414e5"
+    }
+  },
+  "id": "08de4166-7828-4884-8614-7c99e8dc66c8",
+  "environment": {
+    "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+  },
+  "name": "preferredLanguage",
+  "displayName": "Preferred Language",
+  "description": "The user's preferred written or spoken languages, which are optional. This may be explicitly set to null when updating a user to unset it. If provided, the format of the value is the same as the HTTP Accept-Language header field (not including \"Accept-Language:\") and is specified in Section 5.3.5 of RFC 7231.",
+  "schemaType": "STANDARD",
+  "type": "STRING",
+  "unique": false,
+  "enabled": true,
+  "required": false,
+  "schema": {
+    "id": "9fb6d2c4-d30b-4f77-9a36-558e953414e5"
+  }
+}
