@@ -1,0 +1,39 @@
+{
+  "_links": {
+    "self": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/schemas/9fb6d2c4-d30b-4f77-9a36-558e953414e5/attributes/93f2e679-83a7-442c-b5d2-c77ac344ee77"
+    },
+    "environment": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+    },
+    "schema": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/schemas/9fb6d2c4-d30b-4f77-9a36-558e953414e5"
+    }
+  },
+  "id": "93f2e679-83a7-442c-b5d2-c77ac344ee77",
+  "environment": {
+    "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+  },
+  "name": "isEmailVerified",
+  "displayName": "Email verified",
+  "description": "Custom attribute to map cognito emailverified flag",
+  "schemaType": "CUSTOM",
+  "type": "STRING",
+  "unique": false,
+  "enabled": true,
+  "multiValued": false,
+  "required": false,
+  "enumeratedValues": [
+    {
+      "value": "true",
+      "archived": false
+    },
+    {
+      "value": "false",
+      "archived": false
+    }
+  ],
+  "schema": {
+    "id": "9fb6d2c4-d30b-4f77-9a36-558e953414e5"
+  }
+}
