@@ -1,0 +1,23 @@
+{
+  "_links": {
+    "self": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/variables/14f38246-bb34-48b2-9666-23925149f2fb"
+    },
+    "environment": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+    }
+  },
+  "id": "14f38246-bb34-48b2-9666-23925149f2fb",
+  "environment": {
+    "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+  },
+  "name": "companyLogo",
+  "dataType": "string",
+  "displayName": "Url for company's logo image",
+  "context": "flowInstance",
+  "mutable": true,
+  "min": 0,
+  "max": 2000,
+  "createdAt": "2026-01-12T17:58:26.906Z",
+  "updatedAt": "2026-02-20T05:31:50.031Z"
+}
