@@ -1,0 +1,23 @@
+{
+  "_links": {
+    "self": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/variables/03536ba0-bb88-4829-9f8b-521e5f7a8e02"
+    },
+    "environment": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+    }
+  },
+  "id": "03536ba0-bb88-4829-9f8b-521e5f7a8e02",
+  "environment": {
+    "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+  },
+  "name": "DavinciTokensClientId",
+  "dataType": "string",
+  "context": "company",
+  "value": "2c444064-97a4-4a6f-8b73-c4ad110b71a5",
+  "mutable": false,
+  "min": 0,
+  "max": 2000,
+  "createdAt": "2026-01-12T17:59:10.367Z",
+  "updatedAt": "2026-02-20T05:31:50.031Z"
+}
