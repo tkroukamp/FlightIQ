@@ -1,0 +1,40 @@
+{
+  "_links": {
+    "self": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/schemas/9fb6d2c4-d30b-4f77-9a36-558e953414e5/attributes/cecc5093-8234-46c3-b402-24b707152b19"
+    },
+    "environment": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+    },
+    "schema": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/schemas/9fb6d2c4-d30b-4f77-9a36-558e953414e5"
+    }
+  },
+  "id": "cecc5093-8234-46c3-b402-24b707152b19",
+  "environment": {
+    "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+  },
+  "name": "invite",
+  "displayName": "Invite",
+  "description": "A read-only attribute that contains information about the user's invite",
+  "schemaType": "CORE",
+  "type": "COMPLEX",
+  "unique": false,
+  "enabled": true,
+  "required": false,
+  "subAttributes": [
+    {
+      "name": "expiresAt",
+      "displayName": "Expiration Time",
+      "description": "A read-only attribute that specifies the time at which the invite expires.",
+      "schemaType": "CORE",
+      "type": "STRING",
+      "unique": false,
+      "enabled": true,
+      "required": false
+    }
+  ],
+  "schema": {
+    "id": "9fb6d2c4-d30b-4f77-9a36-558e953414e5"
+  }
+}
