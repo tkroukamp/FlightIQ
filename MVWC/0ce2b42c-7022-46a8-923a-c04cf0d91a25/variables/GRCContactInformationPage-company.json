@@ -1,0 +1,24 @@
+{
+  "_links": {
+    "self": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/variables/48372a65-6a00-41a3-83b3-d7ee56fa474b"
+    },
+    "environment": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+    }
+  },
+  "id": "48372a65-6a00-41a3-83b3-d7ee56fa474b",
+  "environment": {
+    "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+  },
+  "name": "GRCContactInformationPage",
+  "dataType": "string",
+  "displayName": "GRC Contact/Profile  Information ",
+  "context": "company",
+  "value": " https://at03.www.vacationclubap.com/accountOverview.jsp?lang=en",
+  "mutable": false,
+  "min": 0,
+  "max": 2000,
+  "createdAt": "2026-01-13T01:19:16.326Z",
+  "updatedAt": "2026-02-20T05:31:50.030Z"
+}
