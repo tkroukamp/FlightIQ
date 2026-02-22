@@ -1,0 +1,114 @@
+{
+  "_links": {
+    "self": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/forms/cbfe64cc-c27f-482c-b37c-5e2723a5b692"
+    }
+  },
+  "id": "cbfe64cc-c27f-482c-b37c-5e2723a5b692",
+  "environment": {
+    "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+  },
+  "name": "Example - Registration",
+  "description": "This is an out-of-the-box registration form that includes basic user information.",
+  "category": "CUSTOM",
+  "components": {
+    "fields": [
+      {
+        "type": "SLATE_TEXTBLOB",
+        "position": {
+          "row": 0,
+          "col": 0
+        },
+        "content": "[{\"children\":[{\"text\":\"Create Your Profile\",\"fontWeight\":\"bold\"}],\"type\":\"heading-1\"},{\"children\":[{\"text\":\"Enter the required information below.\"}]},{\"type\":\"divider\",\"children\":[{\"text\":\"\"}]},{\"type\":\"paragraph\",\"children\":[{\"text\":\"\"}]}]",
+        "key": "rich-text"
+      },
+      {
+        "type": "ERROR_DISPLAY",
+        "position": {
+          "row": 1,
+          "col": 0
+        }
+      },
+      {
+        "type": "TEXT",
+        "position": {
+          "row": 2,
+          "col": 0
+        },
+        "key": "user.username",
+        "label": "[{\"type\":\"paragraph\",\"children\":[{\"text\":\"\"},{\"type\":\"i18n\",\"key\":\"fields.user.username.label\",\"defaultTranslation\":\"Username\",\"inline\":true,\"children\":[{\"text\":\"\"}]},{\"text\":\"\"}]}]",
+        "required": true,
+        "validation": {
+          "type": "NONE"
+        },
+        "otherOptionEnabled": false,
+        "otherOptionAttributeDisabled": false,
+        "attributeDisabled": false
+      },
+      {
+        "type": "TEXT",
+        "position": {
+          "row": 3,
+          "col": 0
+        },
+        "key": "user.email",
+        "label": "[{\"type\":\"paragraph\",\"children\":[{\"text\":\"\"},{\"type\":\"i18n\",\"key\":\"fields.user.email.label\",\"defaultTranslation\":\"Email Address\",\"inline\":true,\"children\":[{\"text\":\"\"}]},{\"text\":\"\"}]}]",
+        "required": true,
+        "validation": {
+          "type": "NONE"
+        },
+        "otherOptionEnabled": false,
+        "otherOptionAttributeDisabled": false,
+        "attributeDisabled": false
+      },
+      {
+        "type": "PASSWORD_VERIFY",
+        "position": {
+          "row": 4,
+          "col": 0
+        },
+        "key": "user.password",
+        "label": "[{\"type\":\"paragraph\",\"children\":[{\"text\":\"\"},{\"type\":\"i18n\",\"key\":\"fields.user.password.label\",\"defaultTranslation\":\"Password\",\"inline\":true,\"children\":[{\"text\":\"\"}]},{\"text\":\"\"}]}]",
+        "required": true,
+        "validation": {
+          "type": "NONE"
+        },
+        "otherOptionEnabled": false,
+        "otherOptionAttributeDisabled": false,
+        "showPasswordRequirements": true,
+        "labelPasswordVerify": "[{\"type\":\"paragraph\",\"children\":[{\"text\":\"\"},{\"type\":\"i18n\",\"key\":\"fields.user.password.labelPasswordVerify\",\"defaultTranslation\":\"Verify Password\",\"inline\":true,\"children\":[{\"text\":\"\"}]},{\"text\":\"\"}]}]",
+        "attributeDisabled": false
+      },
+      {
+        "type": "SUBMIT_BUTTON",
+        "position": {
+          "row": 5,
+          "col": 0
+        },
+        "label": "[{\"type\":\"paragraph\",\"children\":[{\"text\":\"\"},{\"type\":\"i18n\",\"key\":\"button.text\",\"defaultTranslation\":\"Submit\",\"inline\":true,\"children\":[{\"text\":\"\"}]},{\"text\":\"\"}]}]"
+      }
+    ]
+  },
+  "cols": 4,
+  "markOptional": true,
+  "markRequired": false,
+  "textAutoCompleteEnabled": false,
+  "passwordAutoCompleteEnabled": false,
+  "fieldTypes": [
+    "ERROR_DISPLAY",
+    "SLATE_TEXTBLOB",
+    "PASSWORD_VERIFY",
+    "SUBMIT_BUTTON",
+    "TEXT"
+  ],
+  "languageBundle": {
+    "fields.user.password.labelPasswordVerify": "Verify Password",
+    "fields.user.email.label": "Email Address",
+    "button.text": "Submit",
+    "fields.user.username.label": "Username",
+    "fields.user.password.label": "Password"
+  },
+  "created": "2026-01-12T17:58:17.319Z",
+  "modified": "2026-01-28T15:16:24.070Z",
+  "readOnly": false
+}
