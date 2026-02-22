@@ -1,0 +1,50 @@
+{
+  "_links": {
+    "self": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/schemas/9fb6d2c4-d30b-4f77-9a36-558e953414e5/attributes/546aa317-98de-40fd-aaa5-9132b1b2e281"
+    },
+    "environment": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+    },
+    "schema": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/schemas/9fb6d2c4-d30b-4f77-9a36-558e953414e5"
+    }
+  },
+  "id": "546aa317-98de-40fd-aaa5-9132b1b2e281",
+  "environment": {
+    "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+  },
+  "name": "lastSignOn",
+  "displayName": "Last Sign-on",
+  "description": "Last Sign-on Information",
+  "schemaType": "CORE",
+  "type": "COMPLEX",
+  "unique": false,
+  "enabled": true,
+  "required": false,
+  "subAttributes": [
+    {
+      "name": "at",
+      "displayName": "Last Sign-on Time",
+      "description": "The time of the last successful login of the user via the Flow API.",
+      "schemaType": "CORE",
+      "type": "STRING",
+      "unique": false,
+      "enabled": true,
+      "required": false
+    },
+    {
+      "name": "remoteIp",
+      "displayName": "Last Sign-on Remote IP",
+      "description": "The IP address of the last successful login of the user via the Flow API.",
+      "schemaType": "CORE",
+      "type": "STRING",
+      "unique": false,
+      "enabled": true,
+      "required": false
+    }
+  ],
+  "schema": {
+    "id": "9fb6d2c4-d30b-4f77-9a36-558e953414e5"
+  }
+}
