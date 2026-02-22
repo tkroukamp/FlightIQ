@@ -1,0 +1,24 @@
+{
+  "_links": {
+    "self": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/variables/95207b67-7436-4e48-8193-3e6ab20cb003"
+    },
+    "environment": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+    }
+  },
+  "id": "95207b67-7436-4e48-8193-3e6ab20cb003",
+  "environment": {
+    "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+  },
+  "name": "userLookupApiUrl",
+  "dataType": "string",
+  "displayName": "API for User lookup",
+  "context": "company",
+  "value": "https://at03-webauth-vo-mvwc.axisapps.io/api/exp/webauth/v1/user/me/reset",
+  "mutable": false,
+  "min": 0,
+  "max": 2000,
+  "createdAt": "2026-01-12T17:59:10.355Z",
+  "updatedAt": "2026-02-20T05:31:50.031Z"
+}
