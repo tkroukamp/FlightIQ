@@ -1,0 +1,23 @@
+{
+  "_links": {
+    "self": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/variables/b8248a8c-5df0-41c5-a58c-fb7b77ab5fa5"
+    },
+    "environment": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+    }
+  },
+  "id": "b8248a8c-5df0-41c5-a58c-fb7b77ab5fa5",
+  "environment": {
+    "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+  },
+  "name": "origin",
+  "dataType": "string",
+  "displayName": "FIDO2 origin",
+  "context": "flowInstance",
+  "mutable": true,
+  "min": 0,
+  "max": 2000,
+  "createdAt": "2026-01-12T17:59:09.862Z",
+  "updatedAt": "2026-02-20T05:31:50.031Z"
+}
