@@ -1,0 +1,24 @@
+{
+  "_links": {
+    "self": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/variables/4fb44029-4c9c-4964-b2ad-988efdbd0dba"
+    },
+    "environment": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+    }
+  },
+  "id": "4fb44029-4c9c-4964-b2ad-988efdbd0dba",
+  "environment": {
+    "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+  },
+  "name": "skipPeriodEndDate",
+  "dataType": "string",
+  "displayName": "Mfa Skip period end Date",
+  "context": "company",
+  "value": "12/31/2025",
+  "mutable": true,
+  "min": 0,
+  "max": 2000,
+  "createdAt": "2026-01-13T01:16:12.804Z",
+  "updatedAt": "2026-02-20T05:31:50.030Z"
+}
