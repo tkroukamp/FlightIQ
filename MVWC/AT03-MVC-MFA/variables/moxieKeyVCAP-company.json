@@ -1,0 +1,24 @@
+{
+  "_links": {
+    "self": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/variables/42d37d46-98ed-454d-b876-46b9d1331ece"
+    },
+    "environment": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+    }
+  },
+  "id": "42d37d46-98ed-454d-b876-46b9d1331ece",
+  "environment": {
+    "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+  },
+  "name": "moxieKeyVCAP",
+  "dataType": "string",
+  "displayName": "OLJS Translation Key for VCAP",
+  "context": "company",
+  "value": "P2A3F-6173-8944-96AE",
+  "mutable": false,
+  "min": 0,
+  "max": 2000,
+  "createdAt": "2026-01-13T01:16:10.455Z",
+  "updatedAt": "2026-02-20T05:31:50.030Z"
+}
