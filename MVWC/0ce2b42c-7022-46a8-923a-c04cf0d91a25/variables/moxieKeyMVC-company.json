@@ -1,0 +1,24 @@
+{
+  "_links": {
+    "self": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/variables/69906d09-e433-4916-a00b-69f3cbe17214"
+    },
+    "environment": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+    }
+  },
+  "id": "69906d09-e433-4916-a00b-69f3cbe17214",
+  "environment": {
+    "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+  },
+  "name": "moxieKeyMVC",
+  "dataType": "string",
+  "displayName": "OLJS translation Key",
+  "context": "company",
+  "value": "PEE47-327B-3359-EAD0",
+  "mutable": false,
+  "min": 0,
+  "max": 2000,
+  "createdAt": "2026-01-13T01:16:10.305Z",
+  "updatedAt": "2026-02-20T05:31:50.031Z"
+}
