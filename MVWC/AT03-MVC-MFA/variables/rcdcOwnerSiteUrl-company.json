@@ -1,0 +1,24 @@
+{
+  "_links": {
+    "self": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/variables/e7eb6024-ba25-4748-930f-84f3b218fc65"
+    },
+    "environment": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+    }
+  },
+  "id": "e7eb6024-ba25-4748-930f-84f3b218fc65",
+  "environment": {
+    "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+  },
+  "name": "rcdcOwnerSiteUrl",
+  "dataType": "string",
+  "displayName": "My Ritz Carlton Club Owner Site URL",
+  "context": "company",
+  "value": "https://at03.www.myritzcarltonclub.com",
+  "mutable": true,
+  "min": 0,
+  "max": 2000,
+  "createdAt": "2026-01-13T01:16:12.278Z",
+  "updatedAt": "2026-02-20T05:31:50.030Z"
+}
