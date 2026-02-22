@@ -1,0 +1,24 @@
+{
+  "_links": {
+    "self": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/variables/a833ed5b-5675-4795-bc17-cdb35f77cb44"
+    },
+    "environment": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+    }
+  },
+  "id": "a833ed5b-5675-4795-bc17-cdb35f77cb44",
+  "environment": {
+    "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+  },
+  "name": "axisAuthToken",
+  "dataType": "string",
+  "displayName": "Token for AxisAuth User lookup API Call",
+  "context": "company",
+  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBfaWQiOiJjMTIwNjA3MS1lYTA1LTQ5MTktOTFkMy1lY2RjOTc3MjUyMTUiLCJhdXRoX2tleSI6IkFSVElGSUNJQUxfX18wMjVlNTlhMDA2YTM0ZDkwYjYyMDVkNWRmZTY0Nzc3MyIsImV4cCI6MTgzMjA4MjM3NCwic2tpcF9wb2xpY3lfY2FjaGUiOmZhbHNlLCJ0ZW5hbnRfaWQiOiIyYzE1NDNiNS1mMGM4LTRjNGEtODE4My1hMjg2YjNjOGRiMzQiLCJ1c2VyX2lkIjoiNjFlNWI1ODctNWFjNC00MTE3LWIwNDAtODYzYTgyODI3NmMyIn0.PmSeOH7Tgrp7sloL7zRRKe2PRoBsAxR_RVS5EHjTYQk",
+  "mutable": false,
+  "min": 0,
+  "max": 2000,
+  "createdAt": "2026-01-12T17:59:10.372Z",
+  "updatedAt": "2026-02-20T05:31:50.031Z"
+}
