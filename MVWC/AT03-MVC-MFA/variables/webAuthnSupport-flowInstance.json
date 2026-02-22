@@ -1,0 +1,22 @@
+{
+  "_links": {
+    "self": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/variables/049b5fe5-9fbb-4776-a11b-dc6423a3d8dd"
+    },
+    "environment": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+    }
+  },
+  "id": "049b5fe5-9fbb-4776-a11b-dc6423a3d8dd",
+  "environment": {
+    "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+  },
+  "name": "webAuthnSupport",
+  "dataType": "string",
+  "context": "flowInstance",
+  "mutable": true,
+  "min": 0,
+  "max": 2000,
+  "createdAt": "2026-01-12T17:59:09.860Z",
+  "updatedAt": "2026-02-20T05:31:50.031Z"
+}
