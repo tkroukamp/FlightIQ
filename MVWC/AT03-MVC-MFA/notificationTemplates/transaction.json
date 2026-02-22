@@ -1,0 +1,1546 @@
+{
+  "template": {
+    "_links": {
+      "self": {
+        "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction"
+      },
+      "environment": {
+        "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      }
+    },
+    "id": "transaction",
+    "environment": {
+      "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+    },
+    "description": "Users will receive this message for transaction approval.",
+    "deliveryMethods": [
+      "SMS",
+      "Email",
+      "Push",
+      "Voice"
+    ],
+    "displayName": "Transaction",
+    "createdAt": "2020-03-18T09:42:00.705Z",
+    "updatedAt": "2020-03-18T09:42:00.705Z",
+    "variables": {
+      "user.username": {
+        "required": false
+      },
+      "user.name.given": {
+        "required": false
+      },
+      "user.name.family": {
+        "required": false
+      },
+      "otp": {
+        "required": true,
+        "requiredForDeliveryMethods": [
+          "SMS",
+          "Email",
+          "Voice"
+        ]
+      }
+    },
+    "allowDynamicVariables": true
+  },
+  "contents": [
+    {
+      "_links": {
+        "template": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction"
+        },
+        "environment": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+        },
+        "self": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction/contents/766c3394-8a0f-7ea7-01d2-a07c93617108"
+        }
+      },
+      "id": "766c3394-8a0f-7ea7-01d2-a07c93617108",
+      "environment": {
+        "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      },
+      "createdAt": "2021-09-26T08:34:36.000Z",
+      "updatedAt": "2021-09-26T08:34:36.000Z",
+      "locale": "nl",
+      "template": {
+        "id": "transaction"
+      },
+      "title": "PingOne-transactieverzoek",
+      "body": "Keur deze transactie alstublieft goed.",
+      "pushCategory": "BANNER_BUTTONS",
+      "deliveryMethod": "Push",
+      "default": true
+    },
+    {
+      "_links": {
+        "template": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction"
+        },
+        "environment": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+        },
+        "self": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction/contents/723a1783-9cbf-7e70-204b-b66d9517ac7d"
+        }
+      },
+      "id": "723a1783-9cbf-7e70-204b-b66d9517ac7d",
+      "environment": {
+        "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      },
+      "createdAt": "2021-09-26T08:34:36.000Z",
+      "updatedAt": "2021-09-26T08:34:36.000Z",
+      "locale": "es",
+      "template": {
+        "id": "transaction"
+      },
+      "title": "Solicitud de transacción de PingOne",
+      "body": "Aprueba esta transacción.",
+      "pushCategory": "BANNER_BUTTONS",
+      "deliveryMethod": "Push",
+      "default": true
+    },
+    {
+      "_links": {
+        "template": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction"
+        },
+        "environment": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+        },
+        "self": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction/contents/715b0801-9993-7bc5-06af-149e578ab7e1"
+        }
+      },
+      "id": "715b0801-9993-7bc5-06af-149e578ab7e1",
+      "environment": {
+        "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      },
+      "createdAt": "2021-09-26T08:34:36.000Z",
+      "updatedAt": "2021-09-26T08:34:36.000Z",
+      "locale": "de",
+      "template": {
+        "id": "transaction"
+      },
+      "title": "PingOne Transaktionsanfrage",
+      "body": "Bitte genehmigen Sie diese Transaktion.",
+      "pushCategory": "BANNER_BUTTONS",
+      "deliveryMethod": "Push",
+      "default": true
+    },
+    {
+      "_links": {
+        "template": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction"
+        },
+        "environment": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+        },
+        "self": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction/contents/70fa1c5e-eefa-7092-1442-0f1d9c04214c"
+        }
+      },
+      "id": "70fa1c5e-eefa-7092-1442-0f1d9c04214c",
+      "environment": {
+        "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      },
+      "createdAt": "2021-09-26T08:34:36.000Z",
+      "updatedAt": "2021-09-26T08:34:36.000Z",
+      "locale": "fr-CA",
+      "template": {
+        "id": "transaction"
+      },
+      "subject": "Demande de transaction PingOne",
+      "body": "Veuillez approuver cette transaction avec un code d'accès${otp}.",
+      "deliveryMethod": "Email",
+      "default": true
+    },
+    {
+      "_links": {
+        "template": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction"
+        },
+        "environment": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+        },
+        "self": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction/contents/6f51266e-6b1a-762b-2fd9-bbcd1f02b6f0"
+        }
+      },
+      "id": "6f51266e-6b1a-762b-2fd9-bbcd1f02b6f0",
+      "environment": {
+        "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      },
+      "createdAt": "2021-09-26T08:34:36.000Z",
+      "updatedAt": "2021-09-26T08:34:36.000Z",
+      "locale": "th",
+      "template": {
+        "id": "transaction"
+      },
+      "title": "คำขอธุรกรรม PingOne",
+      "body": "โปรดอนุมัติการทำธุรกรรมนี้",
+      "pushCategory": "BANNER_BUTTONS",
+      "deliveryMethod": "Push",
+      "default": true
+    },
+    {
+      "_links": {
+        "template": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction"
+        },
+        "environment": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+        },
+        "self": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction/contents/6f490877-6c08-735b-1ed8-0a3dd1dcfe40"
+        }
+      },
+      "id": "6f490877-6c08-735b-1ed8-0a3dd1dcfe40",
+      "environment": {
+        "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      },
+      "createdAt": "2021-09-26T08:34:36.000Z",
+      "updatedAt": "2021-09-26T08:34:36.000Z",
+      "locale": "tr",
+      "template": {
+        "id": "transaction"
+      },
+      "subject": "PingOne İşlem İsteği",
+      "body": "Lütfen bu işlemi ${otp} şifresiyle onaylayın.",
+      "deliveryMethod": "Email",
+      "default": true
+    },
+    {
+      "_links": {
+        "template": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction"
+        },
+        "environment": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+        },
+        "self": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction/contents/67ac53ae-2127-7a74-3cf1-d1fb6a6ba2b0"
+        }
+      },
+      "id": "67ac53ae-2127-7a74-3cf1-d1fb6a6ba2b0",
+      "environment": {
+        "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      },
+      "createdAt": "2021-09-26T08:34:36.000Z",
+      "updatedAt": "2021-09-26T08:34:36.000Z",
+      "locale": "de",
+      "template": {
+        "id": "transaction"
+      },
+      "content": "Hallo <pause1sec>, Ihr Autorisierungscode lautet <sayCharValue>${OTP}</sayCharValue><pause1sec>Ich wiederhole, Ihr Code lautet <sayCharValue>${OTP}</sayCharValue>",
+      "deliveryMethod": "Voice",
+      "default": true
+    },
+    {
+      "_links": {
+        "template": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction"
+        },
+        "environment": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+        },
+        "self": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction/contents/67103b17-7d0f-7efb-18d2-bc9de5a5cce8"
+        }
+      },
+      "id": "67103b17-7d0f-7efb-18d2-bc9de5a5cce8",
+      "environment": {
+        "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      },
+      "createdAt": "2021-09-26T08:34:36.000Z",
+      "updatedAt": "2021-09-26T08:34:36.000Z",
+      "locale": "pt",
+      "template": {
+        "id": "transaction"
+      },
+      "content": "Olá <pause1sec> o seu código de autenticação é <sayCharValue>${OTP}</sayCharValue><pause1sec>Repito, o seu código é <sayCharValue>${OTP}</sayCharValue>",
+      "deliveryMethod": "Voice",
+      "default": true
+    },
+    {
+      "_links": {
+        "template": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction"
+        },
+        "environment": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+        },
+        "self": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction/contents/63483d63-a794-71f3-1678-6b66ced5b521"
+        }
+      },
+      "id": "63483d63-a794-71f3-1678-6b66ced5b521",
+      "environment": {
+        "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      },
+      "createdAt": "2021-09-26T08:34:36.000Z",
+      "updatedAt": "2021-09-26T08:34:36.000Z",
+      "locale": "es",
+      "template": {
+        "id": "transaction"
+      },
+      "content": "Aprueba esta transacción con la contraseña ${otp}.",
+      "deliveryMethod": "SMS",
+      "default": true
+    },
+    {
+      "_links": {
+        "template": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction"
+        },
+        "environment": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+        },
+        "self": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction/contents/6298f6bd-071d-7ac3-3c1a-3fd39b7af2eb"
+        }
+      },
+      "id": "6298f6bd-071d-7ac3-3c1a-3fd39b7af2eb",
+      "environment": {
+        "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      },
+      "createdAt": "2021-09-26T08:34:36.000Z",
+      "updatedAt": "2021-09-26T08:34:36.000Z",
+      "locale": "ru",
+      "template": {
+        "id": "transaction"
+      },
+      "content": "Подтвердите эту транзакцию с помощью секретного кода ${otp}",
+      "deliveryMethod": "SMS",
+      "default": true
+    },
+    {
+      "_links": {
+        "template": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction"
+        },
+        "environment": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+        },
+        "self": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction/contents/611856fc-772f-7d65-3ab8-47018f632a8e"
+        }
+      },
+      "id": "611856fc-772f-7d65-3ab8-47018f632a8e",
+      "environment": {
+        "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      },
+      "createdAt": "2021-09-26T08:34:36.000Z",
+      "updatedAt": "2021-09-26T08:34:36.000Z",
+      "locale": "it",
+      "template": {
+        "id": "transaction"
+      },
+      "content": "Approvare questa transazione con il passcode ${otp}.",
+      "deliveryMethod": "SMS",
+      "default": true
+    },
+    {
+      "_links": {
+        "template": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction"
+        },
+        "environment": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+        },
+        "self": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction/contents/5c1f967a-8e8c-7103-385f-3856a1d9aa67"
+        }
+      },
+      "id": "5c1f967a-8e8c-7103-385f-3856a1d9aa67",
+      "environment": {
+        "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      },
+      "createdAt": "2021-09-26T08:34:36.000Z",
+      "updatedAt": "2021-09-26T08:34:36.000Z",
+      "locale": "pt",
+      "template": {
+        "id": "transaction"
+      },
+      "title": "Pedido de transação do PingOne",
+      "body": "Aprove esta transação.",
+      "pushCategory": "BANNER_BUTTONS",
+      "deliveryMethod": "Push",
+      "default": true
+    },
+    {
+      "_links": {
+        "template": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction"
+        },
+        "environment": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+        },
+        "self": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction/contents/5a91ee3c-c8bb-743a-1e93-8a575ff69c6e"
+        }
+      },
+      "id": "5a91ee3c-c8bb-743a-1e93-8a575ff69c6e",
+      "environment": {
+        "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      },
+      "createdAt": "2021-09-26T08:34:36.000Z",
+      "updatedAt": "2021-09-26T08:34:36.000Z",
+      "locale": "nl",
+      "template": {
+        "id": "transaction"
+      },
+      "content": "Hallo <pause1sec>, uw authenticatiecode is <sayCharValue>${OTP}</sayCharValue><pause1sec>Ik herhaal, uw code is <sayCharValue>${OTP}</sayCharValue>",
+      "deliveryMethod": "Voice",
+      "default": true
+    },
+    {
+      "_links": {
+        "template": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction"
+        },
+        "environment": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+        },
+        "self": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction/contents/4f8511dc-3d06-7861-28b0-3e8ac1315d03"
+        }
+      },
+      "id": "4f8511dc-3d06-7861-28b0-3e8ac1315d03",
+      "environment": {
+        "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      },
+      "createdAt": "2021-09-26T08:34:36.000Z",
+      "updatedAt": "2021-09-26T08:34:36.000Z",
+      "locale": "zh",
+      "template": {
+        "id": "transaction"
+      },
+      "title": "PingOne 資訊交換請求",
+      "body": "請同意此資訊交換。",
+      "pushCategory": "BANNER_BUTTONS",
+      "deliveryMethod": "Push",
+      "default": true
+    },
+    {
+      "_links": {
+        "template": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction"
+        },
+        "environment": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+        },
+        "self": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction/contents/42b1705e-713a-7728-351e-6e6c93533118"
+        }
+      },
+      "id": "42b1705e-713a-7728-351e-6e6c93533118",
+      "environment": {
+        "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      },
+      "createdAt": "2021-09-26T08:34:36.000Z",
+      "updatedAt": "2021-09-26T08:34:36.000Z",
+      "locale": "de",
+      "template": {
+        "id": "transaction"
+      },
+      "content": "Bitte genehmigen Sie diese Transaktion mit dem Passcode ${otp}.",
+      "deliveryMethod": "SMS",
+      "default": true
+    },
+    {
+      "_links": {
+        "template": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction"
+        },
+        "environment": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+        },
+        "self": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction/contents/409a76f3-e660-77f4-099e-7afc5e361db7"
+        }
+      },
+      "id": "409a76f3-e660-77f4-099e-7afc5e361db7",
+      "environment": {
+        "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      },
+      "createdAt": "2021-09-26T08:34:36.000Z",
+      "updatedAt": "2021-09-26T08:34:36.000Z",
+      "locale": "th",
+      "template": {
+        "id": "transaction"
+      },
+      "content": "สวัสดี <pause1sec> รหัสยืนยันตัวตนของคุณคือ <sayCharValue>${OTP}</sayCharValue><pause1sec>ฉันขอย้ำ รหัสของคุณคือ <sayCharValue>${OTP}</sayCharValue>",
+      "deliveryMethod": "Voice",
+      "default": true
+    },
+    {
+      "_links": {
+        "template": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction"
+        },
+        "environment": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+        },
+        "self": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction/contents/3d4c6bed-3f42-7ae8-0ee7-c718af758eda"
+        }
+      },
+      "id": "3d4c6bed-3f42-7ae8-0ee7-c718af758eda",
+      "environment": {
+        "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      },
+      "createdAt": "2021-09-26T08:34:36.000Z",
+      "updatedAt": "2021-09-26T08:34:36.000Z",
+      "locale": "ja",
+      "template": {
+        "id": "transaction"
+      },
+      "content": "こんにちは <pause1sec>。あなたの認証コードは、 <sayCharValue>${OTP}</sayCharValue><pause1sec> です。繰り返します。あなたの認証コードは、 <sayCharValue>${OTP}</sayCharValue> です。",
+      "deliveryMethod": "Voice",
+      "default": true
+    },
+    {
+      "_links": {
+        "template": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction"
+        },
+        "environment": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+        },
+        "self": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction/contents/3bf6588f-99d6-7073-3cd5-691df8781610"
+        }
+      },
+      "id": "3bf6588f-99d6-7073-3cd5-691df8781610",
+      "environment": {
+        "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      },
+      "createdAt": "2021-09-26T08:34:36.000Z",
+      "updatedAt": "2021-09-26T08:34:36.000Z",
+      "locale": "ko",
+      "template": {
+        "id": "transaction"
+      },
+      "subject": "PingOne 거래 요청",
+      "body": "비밀번호 ${otp}로 이 거래를 승인하세요.",
+      "deliveryMethod": "Email",
+      "default": true
+    },
+    {
+      "_links": {
+        "template": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction"
+        },
+        "environment": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+        },
+        "self": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction/contents/39647053-7d1d-780b-169c-ed85609ffe3e"
+        }
+      },
+      "id": "39647053-7d1d-780b-169c-ed85609ffe3e",
+      "environment": {
+        "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      },
+      "createdAt": "2021-09-26T08:34:36.000Z",
+      "updatedAt": "2021-09-26T08:34:36.000Z",
+      "locale": "ru",
+      "template": {
+        "id": "transaction"
+      },
+      "content": "Здравствуйте, <pause1sec>! Ваш код аутентификации <sayCharValue>${OTP}</sayCharValue><pause1sec>. Повторяю, Ваш код: <sayCharValue>${OTP}</sayCharValue>",
+      "deliveryMethod": "Voice",
+      "default": true
+    },
+    {
+      "_links": {
+        "template": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction"
+        },
+        "environment": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+        },
+        "self": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction/contents/37174557-d10f-7e13-1a52-0d1f35c76050"
+        }
+      },
+      "id": "37174557-d10f-7e13-1a52-0d1f35c76050",
+      "environment": {
+        "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      },
+      "createdAt": "2021-09-26T08:34:36.000Z",
+      "updatedAt": "2021-09-26T08:34:36.000Z",
+      "locale": "ko",
+      "template": {
+        "id": "transaction"
+      },
+      "content": "비밀번호 ${otp}로 이 거래를 승인하세요.",
+      "deliveryMethod": "SMS",
+      "default": true
+    },
+    {
+      "_links": {
+        "template": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction"
+        },
+        "environment": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+        },
+        "self": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction/contents/35cd0709-209d-78e6-0b78-1027bf0a1df6"
+        }
+      },
+      "id": "35cd0709-209d-78e6-0b78-1027bf0a1df6",
+      "environment": {
+        "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      },
+      "createdAt": "2021-09-26T08:34:36.000Z",
+      "updatedAt": "2021-09-26T08:34:36.000Z",
+      "locale": "zh",
+      "template": {
+        "id": "transaction"
+      },
+      "subject": "PingOne 資訊交換請求",
+      "body": "請以密碼 ${otp} 同意此資訊交換。",
+      "deliveryMethod": "Email",
+      "default": true
+    },
+    {
+      "_links": {
+        "template": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction"
+        },
+        "environment": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+        },
+        "self": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction/contents/3350954f-727f-7438-2055-47ac1ca9b89a"
+        }
+      },
+      "id": "3350954f-727f-7438-2055-47ac1ca9b89a",
+      "environment": {
+        "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      },
+      "createdAt": "2021-09-26T08:34:36.000Z",
+      "updatedAt": "2021-09-26T08:34:36.000Z",
+      "locale": "ja",
+      "template": {
+        "id": "transaction"
+      },
+      "title": "PingOne トランザクション リクエスト",
+      "body": "トランザクションを承認してください",
+      "pushCategory": "BANNER_BUTTONS",
+      "deliveryMethod": "Push",
+      "default": true
+    },
+    {
+      "_links": {
+        "template": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction"
+        },
+        "environment": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+        },
+        "self": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction/contents/2343cbc2-8bdd-7cf5-31a6-36a7961ee8fb"
+        }
+      },
+      "id": "2343cbc2-8bdd-7cf5-31a6-36a7961ee8fb",
+      "environment": {
+        "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      },
+      "createdAt": "2021-09-26T08:34:36.000Z",
+      "updatedAt": "2021-09-26T08:34:36.000Z",
+      "locale": "ko",
+      "template": {
+        "id": "transaction"
+      },
+      "content": "안녕하세요 <pause1sec> 귀하의 인증 코드는 <sayCharValue>${OTP}</sayCharValue>입니다<pause1sec>다시 반복합니다. 귀하의 코드는 다음과 같습니다: <sayCharValue>${OTP}</sayCharValue>",
+      "deliveryMethod": "Voice",
+      "default": true
+    },
+    {
+      "_links": {
+        "template": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction"
+        },
+        "environment": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+        },
+        "self": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction/contents/20166337-6a7a-75c1-26c4-3020ff32aacb"
+        }
+      },
+      "id": "20166337-6a7a-75c1-26c4-3020ff32aacb",
+      "environment": {
+        "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      },
+      "createdAt": "2021-09-26T08:34:36.000Z",
+      "updatedAt": "2021-09-26T08:34:36.000Z",
+      "locale": "pt",
+      "template": {
+        "id": "transaction"
+      },
+      "content": "Aprove esta transação com o código de acesso ${otp}.",
+      "deliveryMethod": "SMS",
+      "default": true
+    },
+    {
+      "_links": {
+        "template": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction"
+        },
+        "environment": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+        },
+        "self": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction/contents/0f6831c6-b866-7ad7-18cf-61568826a896"
+        }
+      },
+      "id": "0f6831c6-b866-7ad7-18cf-61568826a896",
+      "environment": {
+        "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      },
+      "createdAt": "2021-09-26T08:34:36.000Z",
+      "updatedAt": "2021-09-26T08:34:36.000Z",
+      "locale": "zh",
+      "template": {
+        "id": "transaction"
+      },
+      "content": "您好，<pause1sec>您的身份驗證代碼是 <sayCharValue>${OTP}</sayCharValue><pause1sec>。我重複，你的代碼是 <sayCharValue>${OTP}</sayCharValue>",
+      "deliveryMethod": "Voice",
+      "default": true
+    },
+    {
+      "_links": {
+        "template": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction"
+        },
+        "environment": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+        },
+        "self": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction/contents/ff7941d7-1016-72b0-3de7-2cc534971d4f"
+        }
+      },
+      "id": "ff7941d7-1016-72b0-3de7-2cc534971d4f",
+      "environment": {
+        "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      },
+      "createdAt": "2021-09-26T08:34:36.000Z",
+      "updatedAt": "2021-09-26T08:34:36.000Z",
+      "locale": "tr",
+      "template": {
+        "id": "transaction"
+      },
+      "content": "Lütfen bu işlemi ${otp} şifresiyle onaylayın.",
+      "deliveryMethod": "SMS",
+      "default": true
+    },
+    {
+      "_links": {
+        "template": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction"
+        },
+        "environment": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+        },
+        "self": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction/contents/f4c668ee-9a94-713d-23cd-dfed555d5be9"
+        }
+      },
+      "id": "f4c668ee-9a94-713d-23cd-dfed555d5be9",
+      "environment": {
+        "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      },
+      "createdAt": "2021-09-26T08:34:36.000Z",
+      "updatedAt": "2021-09-26T08:34:36.000Z",
+      "locale": "fr",
+      "template": {
+        "id": "transaction"
+      },
+      "content": "Bonjour <pause1sec>, votre code d'authentification est <sayCharValue>${OTP}</sayCharValue><pause1sec>. Votre code est <sayCharValue>${OTP}</sayCharValue>",
+      "deliveryMethod": "Voice",
+      "default": true
+    },
+    {
+      "_links": {
+        "template": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction"
+        },
+        "environment": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+        },
+        "self": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction/contents/ec9574bc-d23a-7d16-3425-7a35c7065ea7"
+        }
+      },
+      "id": "ec9574bc-d23a-7d16-3425-7a35c7065ea7",
+      "environment": {
+        "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      },
+      "createdAt": "2021-09-26T08:34:36.000Z",
+      "updatedAt": "2021-09-26T08:34:36.000Z",
+      "locale": "fr-CA",
+      "template": {
+        "id": "transaction"
+      },
+      "content": "Veuillez approuver cette transaction avec un code d'accès${otp}.",
+      "deliveryMethod": "SMS",
+      "default": true
+    },
+    {
+      "_links": {
+        "template": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction"
+        },
+        "environment": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+        },
+        "self": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction/contents/ea926267-de38-7f5b-0a08-770195886e4b"
+        }
+      },
+      "id": "ea926267-de38-7f5b-0a08-770195886e4b",
+      "environment": {
+        "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      },
+      "createdAt": "2021-09-26T08:34:36.000Z",
+      "updatedAt": "2021-09-26T08:34:36.000Z",
+      "locale": "th",
+      "template": {
+        "id": "transaction"
+      },
+      "subject": "คำขอธุรกรรม PingOne",
+      "body": "โปรดอนุมัติธุรกรรมนี้ด้วยรหัสผ่าน ${otp}",
+      "deliveryMethod": "Email",
+      "default": true
+    },
+    {
+      "_links": {
+        "template": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction"
+        },
+        "environment": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+        },
+        "self": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction/contents/e9372028-2823-7689-05ff-f908d0e0d86d"
+        }
+      },
+      "id": "e9372028-2823-7689-05ff-f908d0e0d86d",
+      "environment": {
+        "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      },
+      "createdAt": "2021-09-26T08:34:36.000Z",
+      "updatedAt": "2021-09-26T08:34:36.000Z",
+      "locale": "fr",
+      "template": {
+        "id": "transaction"
+      },
+      "content": "Veuillez approuver cette transaction avec le code d'accès ${otp}.",
+      "deliveryMethod": "SMS",
+      "default": true
+    },
+    {
+      "_links": {
+        "template": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction"
+        },
+        "environment": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+        },
+        "self": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction/contents/e0216014-08eb-77a6-2856-ab1279af62be"
+        }
+      },
+      "id": "e0216014-08eb-77a6-2856-ab1279af62be",
+      "environment": {
+        "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      },
+      "createdAt": "2021-09-26T08:34:36.000Z",
+      "updatedAt": "2021-09-26T08:34:36.000Z",
+      "locale": "fr",
+      "template": {
+        "id": "transaction"
+      },
+      "subject": "Demande de transaction PingOne",
+      "body": "Veuillez approuver cette transaction avec le code d'accès ${otp}.",
+      "deliveryMethod": "Email",
+      "default": true
+    },
+    {
+      "_links": {
+        "template": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction"
+        },
+        "environment": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+        },
+        "self": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction/contents/dac930ae-cefd-7251-0140-2e9cad325714"
+        }
+      },
+      "id": "dac930ae-cefd-7251-0140-2e9cad325714",
+      "environment": {
+        "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      },
+      "createdAt": "2021-09-26T08:34:36.000Z",
+      "updatedAt": "2021-09-26T08:34:36.000Z",
+      "locale": "pt",
+      "template": {
+        "id": "transaction"
+      },
+      "subject": "Pedido de transação do PingOne",
+      "body": "Aprove esta transação com o código de acesso ${otp}.",
+      "deliveryMethod": "Email",
+      "default": true
+    },
+    {
+      "_links": {
+        "template": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction"
+        },
+        "environment": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+        },
+        "self": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction/contents/d8af8e8f-c5b5-78fe-0ec3-e4d121b49108"
+        }
+      },
+      "id": "d8af8e8f-c5b5-78fe-0ec3-e4d121b49108",
+      "environment": {
+        "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      },
+      "createdAt": "2021-09-26T08:34:36.000Z",
+      "updatedAt": "2021-09-26T08:34:36.000Z",
+      "locale": "nl",
+      "template": {
+        "id": "transaction"
+      },
+      "subject": "PingOne-transactieverzoek",
+      "body": "Keur deze transactie alstublieft goed met de toegangscode ${otp}.",
+      "deliveryMethod": "Email",
+      "default": true
+    },
+    {
+      "_links": {
+        "template": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction"
+        },
+        "environment": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+        },
+        "self": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction/contents/d75491fb-3c4c-79f8-37b3-8bd0f104ea95"
+        }
+      },
+      "id": "d75491fb-3c4c-79f8-37b3-8bd0f104ea95",
+      "environment": {
+        "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      },
+      "createdAt": "2021-09-26T08:34:36.000Z",
+      "updatedAt": "2021-09-26T08:34:36.000Z",
+      "locale": "fr-CA",
+      "template": {
+        "id": "transaction"
+      },
+      "content": "Bonjour <pause1sec> votre code d'authentification est <sayCharValue>${OTP}</sayCharValue><pause1sec>Je répète, votre code est <sayCharValue>${OTP}</sayCharValue>",
+      "deliveryMethod": "Voice",
+      "default": true
+    },
+    {
+      "_links": {
+        "template": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction"
+        },
+        "environment": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+        },
+        "self": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction/contents/d3f0d3bc-9cf1-728f-0d61-4c3be4ab302e"
+        }
+      },
+      "id": "d3f0d3bc-9cf1-728f-0d61-4c3be4ab302e",
+      "environment": {
+        "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      },
+      "createdAt": "2021-09-26T08:34:36.000Z",
+      "updatedAt": "2021-09-26T08:34:36.000Z",
+      "locale": "ru",
+      "template": {
+        "id": "transaction"
+      },
+      "subject": "Запрос на транзакцию PingOne",
+      "body": "Подтвердите эту транзакцию с помощью секретного кода ${otp}.",
+      "deliveryMethod": "Email",
+      "default": true
+    },
+    {
+      "_links": {
+        "template": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction"
+        },
+        "environment": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+        },
+        "self": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction/contents/d3d87f66-15a1-78a0-0b5b-551fa12cffaf"
+        }
+      },
+      "id": "d3d87f66-15a1-78a0-0b5b-551fa12cffaf",
+      "environment": {
+        "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      },
+      "createdAt": "2021-09-26T08:34:36.000Z",
+      "updatedAt": "2021-09-26T08:34:36.000Z",
+      "locale": "zh",
+      "template": {
+        "id": "transaction"
+      },
+      "content": "請以密碼 ${otp} 同意此資訊交換。",
+      "deliveryMethod": "SMS",
+      "default": true
+    },
+    {
+      "_links": {
+        "template": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction"
+        },
+        "environment": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+        },
+        "self": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction/contents/d19363ea-2203-71b5-2b7d-dc5bc266003a"
+        }
+      },
+      "id": "d19363ea-2203-71b5-2b7d-dc5bc266003a",
+      "environment": {
+        "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      },
+      "createdAt": "2021-09-26T08:34:36.000Z",
+      "updatedAt": "2021-09-26T08:34:36.000Z",
+      "locale": "es",
+      "template": {
+        "id": "transaction"
+      },
+      "subject": "Solicitud de transacción de PingOne",
+      "body": "Aprueba esta transacción con la contraseña ${otp}.",
+      "deliveryMethod": "Email",
+      "default": true
+    },
+    {
+      "_links": {
+        "template": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction"
+        },
+        "environment": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+        },
+        "self": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction/contents/cddc43cc-ab6f-7b60-2555-b27c91ed93cd"
+        }
+      },
+      "id": "cddc43cc-ab6f-7b60-2555-b27c91ed93cd",
+      "environment": {
+        "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      },
+      "createdAt": "2021-09-26T08:34:36.000Z",
+      "updatedAt": "2021-09-26T08:34:36.000Z",
+      "locale": "it",
+      "template": {
+        "id": "transaction"
+      },
+      "title": "Richiesta di transazione PingOne",
+      "body": "Approvare questa transazione.",
+      "pushCategory": "BANNER_BUTTONS",
+      "deliveryMethod": "Push",
+      "default": true
+    },
+    {
+      "_links": {
+        "template": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction"
+        },
+        "environment": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+        },
+        "self": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction/contents/ca58c395-e697-7de6-2862-09f5200c56d3"
+        }
+      },
+      "id": "ca58c395-e697-7de6-2862-09f5200c56d3",
+      "environment": {
+        "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      },
+      "createdAt": "2021-09-26T08:34:36.000Z",
+      "updatedAt": "2021-09-26T08:34:36.000Z",
+      "locale": "tr",
+      "template": {
+        "id": "transaction"
+      },
+      "content": "Merhaba <pause1sec> kimlik doğrulama kodunuz <sayCharValue>${OTP}</sayCharValue><pause1sec>Kodunuzu tekrarlıyorum <sayCharValue>${OTP}</sayCharValue>",
+      "deliveryMethod": "Voice",
+      "default": true
+    },
+    {
+      "_links": {
+        "template": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction"
+        },
+        "environment": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+        },
+        "self": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction/contents/c31d1e9e-58c3-731a-0592-ef746196b817"
+        }
+      },
+      "id": "c31d1e9e-58c3-731a-0592-ef746196b817",
+      "environment": {
+        "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      },
+      "createdAt": "2021-09-26T08:34:36.000Z",
+      "updatedAt": "2021-09-26T08:34:36.000Z",
+      "locale": "tr",
+      "template": {
+        "id": "transaction"
+      },
+      "title": "PingOne İşlem İsteği",
+      "body": "Lütfen bu işlemi onaylayın.",
+      "pushCategory": "BANNER_BUTTONS",
+      "deliveryMethod": "Push",
+      "default": true
+    },
+    {
+      "_links": {
+        "template": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction"
+        },
+        "environment": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+        },
+        "self": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction/contents/bdc6263c-55f1-785d-122c-5a84ca86ae49"
+        }
+      },
+      "id": "bdc6263c-55f1-785d-122c-5a84ca86ae49",
+      "environment": {
+        "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      },
+      "createdAt": "2021-09-26T08:34:36.000Z",
+      "updatedAt": "2021-09-26T08:34:36.000Z",
+      "locale": "ja",
+      "template": {
+        "id": "transaction"
+      },
+      "content": "以下のパスコードを入力し、このトランザクションを承認してください: ${otp} ",
+      "deliveryMethod": "SMS",
+      "default": true
+    },
+    {
+      "_links": {
+        "template": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction"
+        },
+        "environment": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+        },
+        "self": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction/contents/bc4b96bc-b219-735b-36ae-43844dce14c1"
+        }
+      },
+      "id": "bc4b96bc-b219-735b-36ae-43844dce14c1",
+      "environment": {
+        "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      },
+      "createdAt": "2021-09-26T08:34:36.000Z",
+      "updatedAt": "2021-09-26T08:34:36.000Z",
+      "locale": "fr",
+      "template": {
+        "id": "transaction"
+      },
+      "title": "Demande de transaction PingOne",
+      "body": "Veuillez approuver cette transaction.",
+      "pushCategory": "BANNER_BUTTONS",
+      "deliveryMethod": "Push",
+      "default": true
+    },
+    {
+      "_links": {
+        "template": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction"
+        },
+        "environment": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+        },
+        "self": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction/contents/b89b8386-34c4-7bf1-22fc-cc4b67a292b5"
+        }
+      },
+      "id": "b89b8386-34c4-7bf1-22fc-cc4b67a292b5",
+      "environment": {
+        "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      },
+      "createdAt": "2021-09-26T08:34:36.000Z",
+      "updatedAt": "2021-09-26T08:34:36.000Z",
+      "locale": "ru",
+      "template": {
+        "id": "transaction"
+      },
+      "title": "Запрос на транзакцию PingOne",
+      "body": "Подтвердите эту транзакцию.",
+      "pushCategory": "BANNER_BUTTONS",
+      "deliveryMethod": "Push",
+      "default": true
+    },
+    {
+      "_links": {
+        "template": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction"
+        },
+        "environment": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+        },
+        "self": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction/contents/b49302c6-13fc-7f5a-05b5-bf34e71e3db5"
+        }
+      },
+      "id": "b49302c6-13fc-7f5a-05b5-bf34e71e3db5",
+      "environment": {
+        "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      },
+      "createdAt": "2021-09-26T08:34:36.000Z",
+      "updatedAt": "2021-09-26T08:34:36.000Z",
+      "locale": "ko",
+      "template": {
+        "id": "transaction"
+      },
+      "title": "PingOne 거래 요청",
+      "body": "이 거래를 승인하십시오.",
+      "pushCategory": "BANNER_BUTTONS",
+      "deliveryMethod": "Push",
+      "default": true
+    },
+    {
+      "_links": {
+        "template": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction"
+        },
+        "environment": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+        },
+        "self": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction/contents/b1b75ee4-0910-77f6-102a-85236fd3707c"
+        }
+      },
+      "id": "b1b75ee4-0910-77f6-102a-85236fd3707c",
+      "environment": {
+        "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      },
+      "createdAt": "2021-09-26T08:34:36.000Z",
+      "updatedAt": "2021-09-26T08:34:36.000Z",
+      "locale": "nl",
+      "template": {
+        "id": "transaction"
+      },
+      "content": "Keur deze transactie alstublieft goed met de toegangscode ${otp}.",
+      "deliveryMethod": "SMS",
+      "default": true
+    },
+    {
+      "_links": {
+        "template": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction"
+        },
+        "environment": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+        },
+        "self": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction/contents/a64efeb1-b28c-72cf-3897-40a6894de6c2"
+        }
+      },
+      "id": "a64efeb1-b28c-72cf-3897-40a6894de6c2",
+      "environment": {
+        "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      },
+      "createdAt": "2021-09-26T08:34:36.000Z",
+      "updatedAt": "2021-09-26T08:34:36.000Z",
+      "locale": "de",
+      "template": {
+        "id": "transaction"
+      },
+      "subject": "PingOne Transaktionsanfrage",
+      "body": "Bitte genehmigen Sie diese Transaktion mit dem Passcode ${otp}.",
+      "deliveryMethod": "Email",
+      "default": true
+    },
+    {
+      "_links": {
+        "template": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction"
+        },
+        "environment": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+        },
+        "self": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction/contents/a084ac0c-72e8-7b2b-22ba-f4e2552d9dc7"
+        }
+      },
+      "id": "a084ac0c-72e8-7b2b-22ba-f4e2552d9dc7",
+      "environment": {
+        "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      },
+      "createdAt": "2021-09-26T08:34:36.000Z",
+      "updatedAt": "2021-09-26T08:34:36.000Z",
+      "locale": "ja",
+      "template": {
+        "id": "transaction"
+      },
+      "subject": "PingOne トランザクション リクエスト",
+      "body": "以下のパスコードを入力し、このトランザクションを承認してください: ${otp} ",
+      "deliveryMethod": "Email",
+      "default": true
+    },
+    {
+      "_links": {
+        "template": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction"
+        },
+        "environment": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+        },
+        "self": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction/contents/95979a06-97a9-729d-0a85-d47ce54b5cbe"
+        }
+      },
+      "id": "95979a06-97a9-729d-0a85-d47ce54b5cbe",
+      "environment": {
+        "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      },
+      "createdAt": "2021-09-26T08:34:36.000Z",
+      "updatedAt": "2021-09-26T08:34:36.000Z",
+      "locale": "es",
+      "template": {
+        "id": "transaction"
+      },
+      "content": "Hola, <pause1sec>, tu código de autenticación es <sayCharValue>${OTP}</sayCharValue><pause1sec>. Repito, tu código es <sayCharValue>${OTP}</sayCharValue>",
+      "deliveryMethod": "Voice",
+      "default": true
+    },
+    {
+      "_links": {
+        "template": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction"
+        },
+        "environment": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+        },
+        "self": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction/contents/8d96c743-0d4b-70fe-227a-33df29c88a87"
+        }
+      },
+      "id": "8d96c743-0d4b-70fe-227a-33df29c88a87",
+      "environment": {
+        "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      },
+      "createdAt": "2021-09-26T08:34:36.000Z",
+      "updatedAt": "2021-09-26T08:34:36.000Z",
+      "locale": "it",
+      "template": {
+        "id": "transaction"
+      },
+      "subject": "Richiesta di transazione PingOne",
+      "body": "Approvare questa transazione con il passcode ${otp}.",
+      "deliveryMethod": "Email",
+      "default": true
+    },
+    {
+      "_links": {
+        "template": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction"
+        },
+        "environment": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+        },
+        "self": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction/contents/8b71c6c9-6202-728f-3072-f92962dc1364"
+        }
+      },
+      "id": "8b71c6c9-6202-728f-3072-f92962dc1364",
+      "environment": {
+        "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      },
+      "createdAt": "2021-09-26T08:34:36.000Z",
+      "updatedAt": "2021-09-26T08:34:36.000Z",
+      "locale": "fr-CA",
+      "template": {
+        "id": "transaction"
+      },
+      "title": "Demande de transaction PingOne",
+      "body": "Veuillez approuver cette transaction.",
+      "pushCategory": "BANNER_BUTTONS",
+      "deliveryMethod": "Push",
+      "default": true
+    },
+    {
+      "_links": {
+        "template": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction"
+        },
+        "environment": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+        },
+        "self": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction/contents/88bf0e7d-2d24-70a5-3443-8c38665760da"
+        }
+      },
+      "id": "88bf0e7d-2d24-70a5-3443-8c38665760da",
+      "environment": {
+        "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      },
+      "createdAt": "2021-09-26T08:34:36.000Z",
+      "updatedAt": "2021-09-26T08:34:36.000Z",
+      "locale": "th",
+      "template": {
+        "id": "transaction"
+      },
+      "content": "โปรดอนุมัติธุรกรรมนี้ด้วยรหัสผ่าน ${otp}",
+      "deliveryMethod": "SMS",
+      "default": true
+    },
+    {
+      "_links": {
+        "template": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction"
+        },
+        "environment": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+        },
+        "self": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction/contents/879386a0-45cc-7e06-0888-a311c1525124"
+        }
+      },
+      "id": "879386a0-45cc-7e06-0888-a311c1525124",
+      "environment": {
+        "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      },
+      "createdAt": "2021-09-26T08:34:36.000Z",
+      "updatedAt": "2021-09-26T08:34:36.000Z",
+      "locale": "it",
+      "template": {
+        "id": "transaction"
+      },
+      "content": "Ciao <pause1sec> il tuo codice di autenticazione è <sayCharValue>${OTP}</sayCharValue><pause1sec>Ripeto il tuo codice è <sayCharValue>${OTP}</sayCharValue>",
+      "deliveryMethod": "Voice",
+      "default": true
+    },
+    {
+      "_links": {
+        "template": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction"
+        },
+        "environment": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+        },
+        "self": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction/contents/4b223e79-932e-7494-3457-af5d70f5b3ba"
+        }
+      },
+      "id": "4b223e79-932e-7494-3457-af5d70f5b3ba",
+      "environment": {
+        "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      },
+      "createdAt": "2021-02-18T07:08:23.000Z",
+      "updatedAt": "2021-02-18T07:08:23.000Z",
+      "locale": "en",
+      "template": {
+        "id": "transaction"
+      },
+      "content": "Hello <pause1sec> your authentication code is <sayCharValue>${otp}</sayCharValue><pause1sec><pause1sec><repeatMessage val=2>I repeat <pause1sec>your code is <sayCharValue>${otp}</sayCharValue></repeatMessage>",
+      "deliveryMethod": "Voice",
+      "default": true
+    },
+    {
+      "_links": {
+        "template": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction"
+        },
+        "environment": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+        },
+        "self": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction/contents/6b1aa3c1-11f9-788b-1f27-022639c56999"
+        }
+      },
+      "id": "6b1aa3c1-11f9-788b-1f27-022639c56999",
+      "environment": {
+        "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      },
+      "createdAt": "2020-03-18T09:42:00.705Z",
+      "updatedAt": "2020-03-18T09:42:00.705Z",
+      "locale": "en",
+      "template": {
+        "id": "transaction"
+      },
+      "title": "PingOne Transaction Request",
+      "body": "Please approve this transaction.",
+      "pushCategory": "BANNER_BUTTONS",
+      "deliveryMethod": "Push",
+      "default": true
+    },
+    {
+      "_links": {
+        "template": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction"
+        },
+        "environment": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+        },
+        "self": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction/contents/601aa7bd-570c-7fae-2ac6-9e08ba81eb9b"
+        }
+      },
+      "id": "601aa7bd-570c-7fae-2ac6-9e08ba81eb9b",
+      "environment": {
+        "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      },
+      "createdAt": "2020-03-18T09:42:00.705Z",
+      "updatedAt": "2020-03-18T09:42:00.705Z",
+      "locale": "en",
+      "template": {
+        "id": "transaction"
+      },
+      "subject": "PingOne Transaction Request",
+      "body": "Please approve this transaction with passcode ${otp}.",
+      "deliveryMethod": "Email",
+      "default": true
+    },
+    {
+      "_links": {
+        "template": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction"
+        },
+        "environment": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+        },
+        "self": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/transaction/contents/2007bc08-7475-768c-0779-ce2cdd733892"
+        }
+      },
+      "id": "2007bc08-7475-768c-0779-ce2cdd733892",
+      "environment": {
+        "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      },
+      "createdAt": "2020-03-18T09:42:00.705Z",
+      "updatedAt": "2020-03-18T09:42:00.705Z",
+      "locale": "en",
+      "template": {
+        "id": "transaction"
+      },
+      "content": "Please approve this transaction with passcode ${otp}.",
+      "deliveryMethod": "SMS",
+      "default": true
+    }
+  ]
+}
