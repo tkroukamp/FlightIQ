@@ -1,0 +1,29 @@
+{
+  "_links": {
+    "self": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/schemas/9fb6d2c4-d30b-4f77-9a36-558e953414e5/attributes/c49df366-b5fa-4001-a220-0b8cbc2fc03c"
+    },
+    "environment": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+    },
+    "schema": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/schemas/9fb6d2c4-d30b-4f77-9a36-558e953414e5"
+    }
+  },
+  "id": "c49df366-b5fa-4001-a220-0b8cbc2fc03c",
+  "environment": {
+    "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+  },
+  "name": "username",
+  "displayName": "Username",
+  "description": "The username, which must be provided and must be unique within an environment. The username must be a string of any Unicode letter, mark (e.g. accent, umlaut), math symbol, numeric character, or punctuation. It may have a length of no more than 128 characters.",
+  "schemaType": "CORE",
+  "type": "STRING",
+  "unique": true,
+  "enabled": true,
+  "multiValued": false,
+  "required": true,
+  "schema": {
+    "id": "9fb6d2c4-d30b-4f77-9a36-558e953414e5"
+  }
+}
