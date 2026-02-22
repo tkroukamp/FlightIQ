@@ -1,0 +1,22 @@
+{
+  "_links": {
+    "self": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/variables/c3d18a8b-d6e0-4d04-b1f8-4d2a13294368"
+    },
+    "environment": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+    }
+  },
+  "id": "c3d18a8b-d6e0-4d04-b1f8-4d2a13294368",
+  "environment": {
+    "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+  },
+  "name": "p1DeviceAuthenticationId",
+  "dataType": "string",
+  "context": "flowInstance",
+  "mutable": false,
+  "min": 0,
+  "max": 2000,
+  "createdAt": "2026-01-12T17:59:09.863Z",
+  "updatedAt": "2026-02-20T05:31:50.031Z"
+}
