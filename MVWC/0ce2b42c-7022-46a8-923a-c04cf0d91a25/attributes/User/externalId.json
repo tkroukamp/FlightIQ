@@ -1,0 +1,28 @@
+{
+  "_links": {
+    "self": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/schemas/9fb6d2c4-d30b-4f77-9a36-558e953414e5/attributes/7f5536b2-7c3d-495a-9d52-72d24959f2d4"
+    },
+    "environment": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+    },
+    "schema": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/schemas/9fb6d2c4-d30b-4f77-9a36-558e953414e5"
+    }
+  },
+  "id": "7f5536b2-7c3d-495a-9d52-72d24959f2d4",
+  "environment": {
+    "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+  },
+  "name": "externalId",
+  "displayName": "External ID",
+  "description": "An identifier for the user resource as defined by the provisioning client. This is optional. This may be explicitly set to null when updating a user to unset it. The externalId attribute may simplify the correlation of the user in PingOne with the user's account in another system of record. The platform does not use this attribute directly in any way, but it is used by Ping Identity's Data Sync product.",
+  "schemaType": "STANDARD",
+  "type": "STRING",
+  "unique": false,
+  "enabled": true,
+  "required": false,
+  "schema": {
+    "id": "9fb6d2c4-d30b-4f77-9a36-558e953414e5"
+  }
+}
