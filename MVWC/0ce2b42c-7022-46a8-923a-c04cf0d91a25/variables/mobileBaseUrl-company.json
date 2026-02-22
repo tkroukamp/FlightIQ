@@ -1,0 +1,24 @@
+{
+  "_links": {
+    "self": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/variables/4ee4a0d8-83a2-4bde-8f7a-3ec9bc5ed180"
+    },
+    "environment": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+    }
+  },
+  "id": "4ee4a0d8-83a2-4bde-8f7a-3ec9bc5ed180",
+  "environment": {
+    "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+  },
+  "name": "mobileBaseUrl",
+  "dataType": "string",
+  "displayName": "BaseURL for password reset link",
+  "context": "company",
+  "value": "at03-login.marriottvacationclub.com",
+  "mutable": true,
+  "min": 0,
+  "max": 2000,
+  "createdAt": "2026-01-12T17:59:11.154Z",
+  "updatedAt": "2026-02-20T05:31:50.031Z"
+}
