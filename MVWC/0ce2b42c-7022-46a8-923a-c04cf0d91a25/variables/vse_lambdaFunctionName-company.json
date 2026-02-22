@@ -1,0 +1,24 @@
+{
+  "_links": {
+    "self": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/variables/e1246b13-a86f-45f9-b0ea-f7d4a5d04eb4"
+    },
+    "environment": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+    }
+  },
+  "id": "e1246b13-a86f-45f9-b0ea-f7d4a5d04eb4",
+  "environment": {
+    "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+  },
+  "name": "vse_lambdaFunctionName",
+  "dataType": "string",
+  "displayName": "VSE Lambda function name",
+  "context": "company",
+  "value": "arn:aws:lambda:us-east-1:133186899365:function:qa-CognitoUserOpsHandler",
+  "mutable": true,
+  "min": 0,
+  "max": 2000,
+  "createdAt": "2026-01-12T17:59:08.639Z",
+  "updatedAt": "2026-02-20T05:31:50.031Z"
+}
