@@ -1,0 +1,24 @@
+{
+  "_links": {
+    "self": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/variables/6b8a808b-3364-4f1c-a384-9974376b95fa"
+    },
+    "environment": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+    }
+  },
+  "id": "6b8a808b-3364-4f1c-a384-9974376b95fa",
+  "environment": {
+    "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+  },
+  "name": "backGroundImageGuestConnect",
+  "dataType": "string",
+  "displayName": "Back Ground Image for Guest Connect Flow ",
+  "context": "company",
+  "value": "https://at03-login.marriottvacationclub.com/assets/davinci/static-guest-connect-bg-reactive.html",
+  "mutable": true,
+  "min": 0,
+  "max": 2000,
+  "createdAt": "2026-01-13T01:16:11.385Z",
+  "updatedAt": "2026-02-20T05:31:50.030Z"
+}
