@@ -1,0 +1,24 @@
+{
+  "_links": {
+    "self": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/variables/8e9f2aac-fbba-42a2-9ca0-6575806d33d0"
+    },
+    "environment": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+    }
+  },
+  "id": "8e9f2aac-fbba-42a2-9ca0-6575806d33d0",
+  "environment": {
+    "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+  },
+  "name": "connectOwnershipApiUrl",
+  "dataType": "string",
+  "displayName": "Connect Ownership API Call",
+  "context": "company",
+  "value": "https://at03-webauth-vo-mvwc.axisapps.io/api/exp/webauth/v1/user/me/ownership",
+  "mutable": false,
+  "min": 0,
+  "max": 2000,
+  "createdAt": "2026-01-12T17:59:10.374Z",
+  "updatedAt": "2026-02-20T05:31:50.031Z"
+}
