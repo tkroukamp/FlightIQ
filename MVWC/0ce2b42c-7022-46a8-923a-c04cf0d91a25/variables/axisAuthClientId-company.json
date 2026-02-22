@@ -1,0 +1,24 @@
+{
+  "_links": {
+    "self": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/variables/cf737f50-b96c-4b96-a649-a695ecf3a5fe"
+    },
+    "environment": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+    }
+  },
+  "id": "cf737f50-b96c-4b96-a649-a695ecf3a5fe",
+  "environment": {
+    "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+  },
+  "name": "axisAuthClientId",
+  "dataType": "string",
+  "displayName": "AxisAuth Client ID",
+  "context": "company",
+  "value": "4upfj4nk12e8",
+  "mutable": false,
+  "min": 0,
+  "max": 2000,
+  "createdAt": "2026-01-12T17:59:10.384Z",
+  "updatedAt": "2026-02-20T05:31:50.031Z"
+}
