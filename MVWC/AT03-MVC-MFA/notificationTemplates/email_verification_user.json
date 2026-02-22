@@ -1,0 +1,70 @@
+{
+  "template": {
+    "_links": {
+      "self": {
+        "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/email_verification_user"
+      },
+      "environment": {
+        "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      }
+    },
+    "id": "email_verification_user",
+    "environment": {
+      "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+    },
+    "description": "Users will receive this message to verify their email address.",
+    "deliveryMethods": [
+      "Email"
+    ],
+    "displayName": "Email Address Verification (User)",
+    "createdAt": "2022-09-19T00:00:00.000Z",
+    "updatedAt": "2022-09-26T00:00:00.000Z",
+    "variables": {
+      "user.username": {
+        "required": false
+      },
+      "user.name.given": {
+        "required": false
+      },
+      "user.name.family": {
+        "required": false
+      },
+      "code": {
+        "required": true,
+        "requiredForDeliveryMethods": [
+          "Email"
+        ]
+      }
+    },
+    "allowDynamicVariables": true
+  },
+  "contents": [
+    {
+      "_links": {
+        "template": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/email_verification_user"
+        },
+        "environment": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+        },
+        "self": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/email_verification_user/contents/a7a8ce61-0284-77c0-08f5-653b4d9fe57f"
+        }
+      },
+      "id": "a7a8ce61-0284-77c0-08f5-653b4d9fe57f",
+      "environment": {
+        "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      },
+      "createdAt": "2022-09-19T00:00:00.000Z",
+      "updatedAt": "2022-09-26T00:00:00.000Z",
+      "locale": "en",
+      "template": {
+        "id": "email_verification_user"
+      },
+      "subject": "Verify your email address",
+      "body": "<p>\nUse the code provided to verify your email address with PingOne.\n</p>\n<p>\nTo verify your email address:\n<ol type=\"1\">\n  <li>Sign-on to the self-service portal. For instructions, see <a href=\"https://docs.pingidentity.com/bundle/pingone/page/snd1631892368614.html\">Managing your PingOne user profile</a>.</li>\n  <li>Enter your verification code in the <b>Contact</b> section: ${code}</li>\n  <li>Click <b>Verify</b>.</li>\n</ol>\n</p>",
+      "deliveryMethod": "Email",
+      "default": true
+    }
+  ]
+}
