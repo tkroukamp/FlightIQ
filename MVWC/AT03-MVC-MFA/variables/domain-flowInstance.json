@@ -1,0 +1,22 @@
+{
+  "_links": {
+    "self": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/variables/c67eac46-b90b-4cca-882d-4be3f1b06098"
+    },
+    "environment": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+    }
+  },
+  "id": "c67eac46-b90b-4cca-882d-4be3f1b06098",
+  "environment": {
+    "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+  },
+  "name": "domain",
+  "dataType": "string",
+  "context": "flowInstance",
+  "mutable": true,
+  "min": 0,
+  "max": 2000,
+  "createdAt": "2026-01-13T01:16:15.499Z",
+  "updatedAt": "2026-02-20T05:31:50.030Z"
+}
