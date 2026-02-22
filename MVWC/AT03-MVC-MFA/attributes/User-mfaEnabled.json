@@ -1,0 +1,28 @@
+{
+  "_links": {
+    "self": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/schemas/9fb6d2c4-d30b-4f77-9a36-558e953414e5/attributes/9f7442d6-d1b6-4649-a9ce-3881c1a4fd56"
+    },
+    "environment": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+    },
+    "schema": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/schemas/9fb6d2c4-d30b-4f77-9a36-558e953414e5"
+    }
+  },
+  "id": "9f7442d6-d1b6-4649-a9ce-3881c1a4fd56",
+  "environment": {
+    "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+  },
+  "name": "mfaEnabled",
+  "displayName": "Multi-factor Authentication Enabled",
+  "description": "A read-only attribute that specifies whether multi-factor authentication is enabled. This attribute is set to 'false' by default when the user is created.",
+  "schemaType": "CORE",
+  "type": "BOOLEAN",
+  "unique": false,
+  "enabled": true,
+  "required": false,
+  "schema": {
+    "id": "9fb6d2c4-d30b-4f77-9a36-558e953414e5"
+  }
+}
