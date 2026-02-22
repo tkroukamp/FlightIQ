@@ -1,0 +1,39 @@
+{
+  "_links": {
+    "self": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/schemas/9fb6d2c4-d30b-4f77-9a36-558e953414e5/attributes/3be10a87-d26b-4faa-8f60-8faa06f7c5fb"
+    },
+    "environment": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+    },
+    "schema": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/schemas/9fb6d2c4-d30b-4f77-9a36-558e953414e5"
+    }
+  },
+  "id": "3be10a87-d26b-4faa-8f60-8faa06f7c5fb",
+  "environment": {
+    "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+  },
+  "name": "ownerStatus",
+  "displayName": "Owner Status ",
+  "description": "Possible values are 0 and 1. 0 means user is guest, 1 means user is owner ",
+  "schemaType": "CUSTOM",
+  "type": "STRING",
+  "unique": false,
+  "enabled": true,
+  "multiValued": false,
+  "required": false,
+  "enumeratedValues": [
+    {
+      "value": "0",
+      "archived": false
+    },
+    {
+      "value": "1",
+      "archived": false
+    }
+  ],
+  "schema": {
+    "id": "9fb6d2c4-d30b-4f77-9a36-558e953414e5"
+  }
+}
