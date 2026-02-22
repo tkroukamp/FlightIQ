@@ -1,0 +1,80 @@
+{
+  "_links": {
+    "self": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/schemas/9fb6d2c4-d30b-4f77-9a36-558e953414e5/attributes/b2690307-2273-4e80-a07a-4d3fb16c6179"
+    },
+    "environment": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+    },
+    "schema": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/schemas/9fb6d2c4-d30b-4f77-9a36-558e953414e5"
+    }
+  },
+  "id": "b2690307-2273-4e80-a07a-4d3fb16c6179",
+  "environment": {
+    "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+  },
+  "name": "address",
+  "displayName": "Address",
+  "description": "The user's address (optional)",
+  "schemaType": "STANDARD",
+  "type": "COMPLEX",
+  "unique": false,
+  "enabled": true,
+  "required": false,
+  "subAttributes": [
+    {
+      "name": "streetAddress",
+      "displayName": "Street Address",
+      "description": "The full street address component, which may include house number, street name, P.O. box, and multi-line extended street address information. This attribute may contain newlines.",
+      "schemaType": "STANDARD",
+      "type": "STRING",
+      "unique": false,
+      "enabled": true,
+      "required": false
+    },
+    {
+      "name": "locality",
+      "displayName": "Locality",
+      "description": "The city or locality component of the address.",
+      "schemaType": "STANDARD",
+      "type": "STRING",
+      "unique": false,
+      "enabled": true,
+      "required": false
+    },
+    {
+      "name": "region",
+      "displayName": "Region",
+      "description": "The state or region component of the address.",
+      "schemaType": "STANDARD",
+      "type": "STRING",
+      "unique": false,
+      "enabled": true,
+      "required": false
+    },
+    {
+      "name": "postalCode",
+      "displayName": "Postal Code",
+      "description": "The zip code or postal code component of the address.",
+      "schemaType": "STANDARD",
+      "type": "STRING",
+      "unique": false,
+      "enabled": true,
+      "required": false
+    },
+    {
+      "name": "countryCode",
+      "displayName": "Country Code",
+      "description": "The country name component. When specified, the value MUST be in ISO 3166-1 \"alpha-2\" code format [ISO3166]; e.g., the United States and Sweden are \"US\" and \"SE\", respectively.",
+      "schemaType": "STANDARD",
+      "type": "STRING",
+      "unique": false,
+      "enabled": true,
+      "required": false
+    }
+  ],
+  "schema": {
+    "id": "9fb6d2c4-d30b-4f77-9a36-558e953414e5"
+  }
+}
