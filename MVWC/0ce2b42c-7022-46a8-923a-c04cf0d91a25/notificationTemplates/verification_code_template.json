@@ -1,0 +1,421 @@
+{
+  "template": {
+    "_links": {
+      "self": {
+        "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/verification_code_template"
+      },
+      "environment": {
+        "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      }
+    },
+    "id": "verification_code_template",
+    "environment": {
+      "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+    },
+    "description": "Users will receive this message to verify their email address.",
+    "deliveryMethods": [
+      "Email"
+    ],
+    "displayName": "Verification Code",
+    "createdAt": "2019-01-10T16:39:56.000Z",
+    "updatedAt": "2019-01-10T16:39:56.000Z",
+    "variables": {
+      "user.username": {
+        "required": false
+      },
+      "user.name.given": {
+        "required": false
+      },
+      "user.name.family": {
+        "required": false
+      },
+      "code.value": {
+        "required": true,
+        "requiredForDeliveryMethods": [
+          "Email"
+        ]
+      }
+    },
+    "allowDynamicVariables": true
+  },
+  "contents": [
+    {
+      "_links": {
+        "template": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/verification_code_template"
+        },
+        "environment": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+        },
+        "self": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/verification_code_template/contents/6d33c5ff-0844-751a-2836-fbde0230b76e"
+        }
+      },
+      "id": "6d33c5ff-0844-751a-2836-fbde0230b76e",
+      "environment": {
+        "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      },
+      "createdAt": "2021-09-26T08:34:36.000Z",
+      "updatedAt": "2021-09-26T08:34:36.000Z",
+      "locale": "de",
+      "template": {
+        "id": "verification_code_template"
+      },
+      "subject": "PingOne Verifizierungscode",
+      "body": "Ihr PingOne Verifizierungscode lautet: <b>${code.value}</b>",
+      "deliveryMethod": "Email",
+      "default": true
+    },
+    {
+      "_links": {
+        "template": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/verification_code_template"
+        },
+        "environment": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+        },
+        "self": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/verification_code_template/contents/697ee186-2c96-72f2-0405-fe30c8521466"
+        }
+      },
+      "id": "697ee186-2c96-72f2-0405-fe30c8521466",
+      "environment": {
+        "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      },
+      "createdAt": "2021-09-26T08:34:36.000Z",
+      "updatedAt": "2021-09-26T08:34:36.000Z",
+      "locale": "nl",
+      "template": {
+        "id": "verification_code_template"
+      },
+      "subject": "PingOne-verificatiecode",
+      "body": "Uw PingOne-verificatiecode is: <b>${code.value}</b>",
+      "deliveryMethod": "Email",
+      "default": true
+    },
+    {
+      "_links": {
+        "template": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/verification_code_template"
+        },
+        "environment": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+        },
+        "self": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/verification_code_template/contents/4aee4041-e8d3-7594-36d8-904352a4ae38"
+        }
+      },
+      "id": "4aee4041-e8d3-7594-36d8-904352a4ae38",
+      "environment": {
+        "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      },
+      "createdAt": "2021-09-26T08:34:36.000Z",
+      "updatedAt": "2021-09-26T08:34:36.000Z",
+      "locale": "ja",
+      "template": {
+        "id": "verification_code_template"
+      },
+      "subject": "PingOne 検証コード",
+      "body": "あなたの PingOne 検証コードは： <b>${code.value}</b> です。",
+      "deliveryMethod": "Email",
+      "default": true
+    },
+    {
+      "_links": {
+        "template": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/verification_code_template"
+        },
+        "environment": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+        },
+        "self": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/verification_code_template/contents/3b4fbde4-c6d1-7787-008b-dca60db2948d"
+        }
+      },
+      "id": "3b4fbde4-c6d1-7787-008b-dca60db2948d",
+      "environment": {
+        "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      },
+      "createdAt": "2021-09-26T08:34:36.000Z",
+      "updatedAt": "2021-09-26T08:34:36.000Z",
+      "locale": "zh",
+      "template": {
+        "id": "verification_code_template"
+      },
+      "subject": "PingOne 核證代碼",
+      "body": "您的PingOne 核證代碼是： <b>${code.value}</b>",
+      "deliveryMethod": "Email",
+      "default": true
+    },
+    {
+      "_links": {
+        "template": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/verification_code_template"
+        },
+        "environment": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+        },
+        "self": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/verification_code_template/contents/2bdedf65-c04f-7152-28dc-a0c1f293968f"
+        }
+      },
+      "id": "2bdedf65-c04f-7152-28dc-a0c1f293968f",
+      "environment": {
+        "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      },
+      "createdAt": "2021-09-26T08:34:36.000Z",
+      "updatedAt": "2021-09-26T08:34:36.000Z",
+      "locale": "tr",
+      "template": {
+        "id": "verification_code_template"
+      },
+      "subject": "PingOne Doğrulama Kodu",
+      "body": "PingOne Doğrulama Kodunuz: <b>${code.value}</b>",
+      "deliveryMethod": "Email",
+      "default": true
+    },
+    {
+      "_links": {
+        "template": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/verification_code_template"
+        },
+        "environment": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+        },
+        "self": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/verification_code_template/contents/12c615c7-16dd-7a3d-3a16-91d98f516baa"
+        }
+      },
+      "id": "12c615c7-16dd-7a3d-3a16-91d98f516baa",
+      "environment": {
+        "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      },
+      "createdAt": "2021-09-26T08:34:36.000Z",
+      "updatedAt": "2021-09-26T08:34:36.000Z",
+      "locale": "pt",
+      "template": {
+        "id": "verification_code_template"
+      },
+      "subject": "Código de verificação do PingOne",
+      "body": "O seu código de verificação do PingOne é: <b>${code.value}</b>",
+      "deliveryMethod": "Email",
+      "default": true
+    },
+    {
+      "_links": {
+        "template": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/verification_code_template"
+        },
+        "environment": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+        },
+        "self": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/verification_code_template/contents/facf5012-9c5f-7f19-1355-e92578ba4f6d"
+        }
+      },
+      "id": "facf5012-9c5f-7f19-1355-e92578ba4f6d",
+      "environment": {
+        "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      },
+      "createdAt": "2021-09-26T08:34:36.000Z",
+      "updatedAt": "2021-09-26T08:34:36.000Z",
+      "locale": "fr",
+      "template": {
+        "id": "verification_code_template"
+      },
+      "subject": "Code de vérification PingOne",
+      "body": "Votre code de vérification PingOne est : <b>${code.value}</b>",
+      "deliveryMethod": "Email",
+      "default": true
+    },
+    {
+      "_links": {
+        "template": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/verification_code_template"
+        },
+        "environment": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+        },
+        "self": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/verification_code_template/contents/f24a8001-2cdd-7fe6-3713-b3a949c069f7"
+        }
+      },
+      "id": "f24a8001-2cdd-7fe6-3713-b3a949c069f7",
+      "environment": {
+        "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      },
+      "createdAt": "2021-09-26T08:34:36.000Z",
+      "updatedAt": "2021-09-26T08:34:36.000Z",
+      "locale": "ko",
+      "template": {
+        "id": "verification_code_template"
+      },
+      "subject": "PingOne 인증 코드",
+      "body": "PingOne 인증 코드는 다음과 같습니다. <b>${code.value}</b>",
+      "deliveryMethod": "Email",
+      "default": true
+    },
+    {
+      "_links": {
+        "template": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/verification_code_template"
+        },
+        "environment": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+        },
+        "self": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/verification_code_template/contents/dc1ebbc2-4291-7849-0490-6fa49d6bfcbf"
+        }
+      },
+      "id": "dc1ebbc2-4291-7849-0490-6fa49d6bfcbf",
+      "environment": {
+        "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      },
+      "createdAt": "2021-09-26T08:34:36.000Z",
+      "updatedAt": "2021-09-26T08:34:36.000Z",
+      "locale": "th",
+      "template": {
+        "id": "verification_code_template"
+      },
+      "subject": "รหัสยืนยัน PingOne",
+      "body": "รหัสยืนยัน PingOne ของคุณคือ: <b>${code.value}</b>",
+      "deliveryMethod": "Email",
+      "default": true
+    },
+    {
+      "_links": {
+        "template": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/verification_code_template"
+        },
+        "environment": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+        },
+        "self": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/verification_code_template/contents/bf7f669b-cf7d-7e9a-2cc6-e2d6b9d65601"
+        }
+      },
+      "id": "bf7f669b-cf7d-7e9a-2cc6-e2d6b9d65601",
+      "environment": {
+        "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      },
+      "createdAt": "2021-09-26T08:34:36.000Z",
+      "updatedAt": "2021-09-26T08:34:36.000Z",
+      "locale": "it",
+      "template": {
+        "id": "verification_code_template"
+      },
+      "subject": "Codice di verifica PingOne",
+      "body": "Il tuo codice di verifica PingOne è: <b>${code.value}</b>",
+      "deliveryMethod": "Email",
+      "default": true
+    },
+    {
+      "_links": {
+        "template": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/verification_code_template"
+        },
+        "environment": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+        },
+        "self": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/verification_code_template/contents/b1783842-d3f0-7f69-0581-f9129a33e0e9"
+        }
+      },
+      "id": "b1783842-d3f0-7f69-0581-f9129a33e0e9",
+      "environment": {
+        "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      },
+      "createdAt": "2021-09-26T08:34:36.000Z",
+      "updatedAt": "2021-09-26T08:34:36.000Z",
+      "locale": "fr-CA",
+      "template": {
+        "id": "verification_code_template"
+      },
+      "subject": "Code de vérification PingOne",
+      "body": "Votre code de vérification PingOne est: <b>${code.value}</b>",
+      "deliveryMethod": "Email",
+      "default": true
+    },
+    {
+      "_links": {
+        "template": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/verification_code_template"
+        },
+        "environment": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+        },
+        "self": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/verification_code_template/contents/a16a3894-194b-7ccc-05e6-5b04929370e8"
+        }
+      },
+      "id": "a16a3894-194b-7ccc-05e6-5b04929370e8",
+      "environment": {
+        "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      },
+      "createdAt": "2021-09-26T08:34:36.000Z",
+      "updatedAt": "2021-09-26T08:34:36.000Z",
+      "locale": "ru",
+      "template": {
+        "id": "verification_code_template"
+      },
+      "subject": "Проверочный код PingOne",
+      "body": "Ваш проверочный код PingOne: <b>${code.value}</b>",
+      "deliveryMethod": "Email",
+      "default": true
+    },
+    {
+      "_links": {
+        "template": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/verification_code_template"
+        },
+        "environment": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+        },
+        "self": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/verification_code_template/contents/8dfb884d-ac71-765e-3152-1a0921d364d4"
+        }
+      },
+      "id": "8dfb884d-ac71-765e-3152-1a0921d364d4",
+      "environment": {
+        "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      },
+      "createdAt": "2021-09-26T08:34:36.000Z",
+      "updatedAt": "2021-09-26T08:34:36.000Z",
+      "locale": "es",
+      "template": {
+        "id": "verification_code_template"
+      },
+      "subject": "Código de verificación de PingOne",
+      "body": "Tu código de verificación de PingOne es: <b>${code.value}</b>",
+      "deliveryMethod": "Email",
+      "default": true
+    },
+    {
+      "_links": {
+        "template": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/verification_code_template"
+        },
+        "environment": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+        },
+        "self": {
+          "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/templates/verification_code_template/contents/6a1a2e7b-be16-788f-19c0-5194bc130c1c"
+        }
+      },
+      "id": "6a1a2e7b-be16-788f-19c0-5194bc130c1c",
+      "environment": {
+        "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+      },
+      "createdAt": "2019-01-10T16:39:56.000Z",
+      "updatedAt": "2019-01-10T16:39:56.000Z",
+      "locale": "en",
+      "template": {
+        "id": "verification_code_template"
+      },
+      "subject": "Verify your email address",
+      "body": "<p>\nYour PingOne verification code is: <b>${code.value}</b>\n</p>\n<p>\nUse this code to verify your email address with PingOne. If you think you received this email in error, contact your administrator.\n</p>",
+      "deliveryMethod": "Email",
+      "default": true
+    }
+  ]
+}
