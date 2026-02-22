@@ -1,0 +1,29 @@
+{
+  "_links": {
+    "self": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/schemas/9fb6d2c4-d30b-4f77-9a36-558e953414e5/attributes/2e55e0c4-ba99-4882-af05-a41e5205b612"
+    },
+    "environment": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+    },
+    "schema": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/schemas/9fb6d2c4-d30b-4f77-9a36-558e953414e5"
+    }
+  },
+  "id": "2e55e0c4-ba99-4882-af05-a41e5205b612",
+  "environment": {
+    "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+  },
+  "name": "skipByCount",
+  "displayName": "Skip Enrollment  Count ",
+  "description": "Custom attribute to count how many times user opted to skip mfa enrollment during the skip phase. Use this variable to force user to enroll mfa.",
+  "schemaType": "CUSTOM",
+  "type": "STRING",
+  "unique": false,
+  "enabled": true,
+  "multiValued": false,
+  "required": false,
+  "schema": {
+    "id": "9fb6d2c4-d30b-4f77-9a36-558e953414e5"
+  }
+}
