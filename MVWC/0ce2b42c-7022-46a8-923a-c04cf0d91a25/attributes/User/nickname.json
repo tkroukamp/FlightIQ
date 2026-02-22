@@ -1,0 +1,28 @@
+{
+  "_links": {
+    "self": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/schemas/9fb6d2c4-d30b-4f77-9a36-558e953414e5/attributes/570ae5f9-6604-4a2e-b718-efbfd24b8df9"
+    },
+    "environment": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+    },
+    "schema": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/schemas/9fb6d2c4-d30b-4f77-9a36-558e953414e5"
+    }
+  },
+  "id": "570ae5f9-6604-4a2e-b718-efbfd24b8df9",
+  "environment": {
+    "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+  },
+  "name": "nickname",
+  "displayName": "Nickname",
+  "description": "The user's nickname, which is optional. This may be explicitly set to null when updating a user to unset it. Valid characters consists of any Unicode letter, mark (e.g. accent, umlaut), math symbol, numeric character, or punctuation. It may have a length of no more than 256 characters.",
+  "schemaType": "STANDARD",
+  "type": "STRING",
+  "unique": false,
+  "enabled": true,
+  "required": false,
+  "schema": {
+    "id": "9fb6d2c4-d30b-4f77-9a36-558e953414e5"
+  }
+}
