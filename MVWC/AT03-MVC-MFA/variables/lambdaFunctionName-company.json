@@ -1,0 +1,24 @@
+{
+  "_links": {
+    "self": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/variables/498f3971-9e34-4216-9366-622c7627cc23"
+    },
+    "environment": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+    }
+  },
+  "id": "498f3971-9e34-4216-9366-622c7627cc23",
+  "environment": {
+    "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+  },
+  "name": "lambdaFunctionName",
+  "dataType": "string",
+  "displayName": "MVW Lambda Function",
+  "context": "company",
+  "value": "arn:aws:lambda:us-east-1:918398386529:function:at03-CognitoUserOpsHandler",
+  "mutable": false,
+  "min": 0,
+  "max": 2000,
+  "createdAt": "2026-01-12T17:59:08.635Z",
+  "updatedAt": "2026-02-20T05:31:50.031Z"
+}
