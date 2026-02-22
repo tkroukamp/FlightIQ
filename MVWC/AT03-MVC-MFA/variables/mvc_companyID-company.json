@@ -1,0 +1,23 @@
+{
+  "_links": {
+    "self": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25/variables/194f149e-83dd-4d4b-a73a-2a47b576dc6d"
+    },
+    "environment": {
+      "href": "https://api.pingone.com/v1/environments/0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+    }
+  },
+  "id": "194f149e-83dd-4d4b-a73a-2a47b576dc6d",
+  "environment": {
+    "id": "0ce2b42c-7022-46a8-923a-c04cf0d91a25"
+  },
+  "name": "mvc_companyID",
+  "dataType": "string",
+  "context": "company",
+  "value": "d1875f39-8f4d-4852-b736-1fb7aa538110",
+  "mutable": true,
+  "min": 0,
+  "max": 2000,
+  "createdAt": "2026-01-13T02:21:41.021Z",
+  "updatedAt": "2026-02-20T05:31:50.030Z"
+}
